@@ -1,3 +1,12 @@
 .selector-for-some-widget {
     box-sizing: content-box;
   }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Another Montserrat', serif;
+  }
+  
