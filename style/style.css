@@ -9,6 +9,7 @@
 :root {
   --primary-color: #ffc61e;
   --secondary-color: #1635c3;
+  --text-color: #fff
 }
 
 body {
@@ -106,6 +107,23 @@ h3 {
   font-weight: 500;
 }
 
+.text-button h5{
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.certified p{
+  font-size: 20px;
+}
+
+.certified span{
+  font-weight: bold;
+}
+
+.certified img{
+  width: 200px;
+}
+
 .right {
   display: flex;
   justify-content: flex-end;
@@ -127,7 +145,7 @@ h3 {
   gap: 32px;
   border-radius: 8px;
   background: var(--blue, #1635c3);
-  color: #fff;
+  color: var(--text-color);
   border: none;
 
   /* Label 1 */
@@ -138,3 +156,116 @@ h3 {
 
 
 /* hero-section */
+
+/* exchange section */
+.exchange-section{
+  margin-bottom: 50px;
+}
+.exchange-card{
+  display: flex;
+  padding: 20px 20px;
+  width: 78%;
+  margin: auto;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.title{
+  display: inline-flex;
+  gap: 5px;
+}
+
+.title img{
+  padding: 0.5rem;
+  border-radius: 150px;
+  background: #0057C2;
+  color: #FFF;
+}
+
+.cad{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    outline: none !important;
+}
+
+.exc-p{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--typography-secondary, #525D73);
+  font-size: 12px;
+  font-family: Montserrat;
+}
+
+.line{
+    width: 1px;
+    height: 120px;
+    align-self: stretch;
+    background-color: #333;
+}
+
+.exchange-btn{
+    display: flex;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    font-size: 13px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* exchange section */
+
+
+/* info */
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.steps{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.circle{
+  display: flex;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  background: var(--surface, #F4F7FA);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+
+.steps h6{
+  font-size: 18px;
+}
