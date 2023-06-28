@@ -9,7 +9,7 @@
 :root {
   --primary-color: #ffc61e;
   --secondary-color: #1635c3;
-  --text-color: #fff;
+  --text-color: #fff
 }
 
 body {
@@ -107,20 +107,20 @@ h3 {
   font-weight: 500;
 }
 
-.text-button h5 {
+.text-button h5{
   margin-bottom: 20px;
   font-weight: normal;
 }
 
-.certified p {
+.certified p{
   font-size: 20px;
 }
 
-.certified span {
+.certified span{
   font-weight: bold;
 }
 
-.certified img {
+.certified img{
   width: 200px;
 }
 
@@ -131,6 +131,8 @@ h3 {
   flex: 1 0 0;
   align-self: stretch;
 }
+
+
 
 .button-light {
   display: flex;
@@ -152,13 +154,14 @@ h3 {
   font-weight: 500;
 }
 
+
 /* hero-section */
 
 /* exchange section */
-.exchange-section {
+.exchange-section{
   margin-bottom: 50px;
 }
-.exchange-card {
+.exchange-card{
   display: flex;
   padding: 20px 20px;
   width: 78%;
@@ -166,94 +169,95 @@ h3 {
   align-items: center;
   gap: 3rem;
   border-radius: 24px;
-  background: #fff;
+  background: #FFF;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
 }
 
-.exchange {
+.exchange{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.title {
+.title{
   display: inline-flex;
   gap: 5px;
 }
 
-.title img {
+.title img{
   padding: 0.5rem;
   border-radius: 150px;
-  background: #0057c2;
-  color: #fff;
+  background: #0057C2;
+  color: #FFF;
 }
 
-.cad {
-  display: flex;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background: var(--secondary-color) !important;
-  color: var(--text-color) !important;
-  justify-content: center;
-  align-items: center;
-  gap: 0.25rem;
-  outline: none !important;
+.cad{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    outline: none !important;
 }
 
-.exc-p {
+.exc-p{
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  color: var(--typography-secondary, #525d73);
+  color: var(--typography-secondary, #525D73);
   font-size: 12px;
   font-family: Montserrat;
 }
 
-.line {
-  width: 1px;
-  height: 120px;
-  align-self: stretch;
-  background-color: #333;
+.line{
+    width: 1px;
+    height: 120px;
+    align-self: stretch;
+    background-color: #333;
 }
 
-.exchange-btn {
-  display: flex;
-  padding: 10px 30px;
-  border-radius: 8px;
-  border: none;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 0;
-  font-size: 13px;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+.exchange-btn{
+    display: flex;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    font-size: 13px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 /* exchange section */
 
+
 /* info */
 
-.info {
+.info{
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.steps {
+.steps{
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.circle {
+.circle{
   display: flex;
   width: 75px;
   height: 75px;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 100px;
-  background: var(--surface, #f4f7fa);
+  background: var(--surface, #F4F7FA);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -262,43 +266,37 @@ h3 {
   font-size: 25px;
 }
 
-.steps h6 {
+.steps h6{
   font-size: 18px;
 }
 
 /* info */
 
 /* softphone */
-.softphone {
+.softphone{
   display: flex;
   width: 100%;
 }
 
-.softphone_content {
+.softphone_content{
   width: 50%;
   font-size: 20px;
   margin-top: 120px;
 }
 
-.softphone_content h2 {
-  background: -webkit-linear-gradient(
-    180deg,
-    #1b0892,
-    #960dac,
-    #ff95f0,
-    #fad450
-  );
+.softphone_content h2{
+  background: -webkit-linear-gradient(180deg, #1B0892, #960DAC, #FF95F0, #FAD450);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   padding-left: 6px;
 }
 
-.softphone_content p {
+.softphone_content p{
   padding-left: 10px;
 }
 
-.name {
+.name{
   background-color: white;
   display: flex !important;
   align-items: center !important;
@@ -308,7 +306,7 @@ h3 {
   padding-left: 20px !important;
 }
 
-input {
+input{
   width: 100%;
   background: transparent;
   border: none !important;
@@ -317,12 +315,13 @@ input {
   padding-left: 14px;
   font-size: 16px !important;
   box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.1);
+
 }
-.submit {
+.submit{
   padding-left: 21px !important;
   padding-bottom: 5px;
 }
-.btn-purple {
+.btn-purple{
   border-radius: 6px;
   background: rgba(108, 87, 239, 0.97);
   padding: 12px 25px;
@@ -330,6 +329,7 @@ input {
   font-size: 10px;
   color: var(--text-color);
   font-weight: 500;
+  
 }
 
 .softphone_image {
@@ -343,7 +343,7 @@ input {
   width: 650px;
 }
 
-.softphone_image p {
+.softphone_image p{
   margin: auto;
   font-size: 20px;
   text-align: center;
@@ -351,14 +351,83 @@ input {
   margin-top: -30px;
 }
 
-.expert {
+.expert{
   display: flex;
   margin: auto !important;
   justify-content: center !important;
   padding-left: 0px !important;
 }
 
-/* softphone */
+/* softphone end*/
+
+/* slider &  client card */
+.slider{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.card{
+box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+display: flex;
+width: 400px;
+flex-direction: column;
+align-items: center;
+flex-shrink: 0;
+border-radius: 16px;
+position: relative;
+background: #FFF;
+border: none !important;
+}
+
+.star-icon{
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin-left: 55px;
+  margin-bottom: 5px;
+}
+
+.card p{
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.line-hz{
+  width: 100%;
+  height: 1px;
+  background-color: #dcdbdb;
+}
+
+.employee{
+  padding: 10px 0px;
+  padding-top: 15px;
+  display: inline-flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.employee p{
+  margin-left: 0;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.employee span{
+  color: #706a6a;
+  font-weight: 500;
+}
+
+/* client card end*/
 
 /* footer */
 .row-footer {
@@ -369,7 +438,6 @@ input {
   background: var(--blue, #1635c3);
   padding: 10px;
 }
-
 .footer-left p {
   margin: 0;
   color: #fff;
@@ -377,26 +445,21 @@ input {
   font-family: Montserrat;
   font-weight: 600;
 }
-
 .social-media-icons li {
   display: inline-block;
   margin-right: 10px;
 }
-
 .social-media-icons li:last-child {
   margin-right: 0;
 }
-
 .social-media-icons a {
   color: #ffffff;
   font-size: 26px;
 }
-
 .icons img{
  width: 26px;
  height: 26px;
  color: #FFFFFF;
 }
 /* Add Font Awesome CSS link to your HTML file */
-
 /* footer */
