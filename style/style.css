@@ -393,6 +393,15 @@ border-radius: 16px;
 position: relative;
 background: #FFF;
 border: none !important;
+padding-top: 25px;
+}
+.abs{
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 45px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .star-icon{
