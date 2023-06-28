@@ -173,7 +173,7 @@ h3 {
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
 }
 
-.form{
+.exchange{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -269,3 +269,93 @@ h3 {
 .steps h6{
   font-size: 18px;
 }
+
+/* info */
+
+/* softphone */
+.softphone{
+  display: flex;
+  width: 100%;
+}
+
+.softphone_content{
+  width: 50%;
+  font-size: 20px;
+  margin-top: 120px;
+}
+
+.softphone_content h2{
+  background: -webkit-linear-gradient(180deg, #1B0892, #960DAC, #FF95F0, #FAD450);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-left: 6px;
+}
+
+.softphone_content p{
+  padding-left: 10px;
+}
+
+.name{
+  background-color: white;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 7px !important;
+  border-radius: 4px !important;
+  margin-top: 5% !important;
+  padding-left: 20px !important;
+}
+
+input{
+  width: 100%;
+  background: transparent;
+  border: none !important;
+  outline: none;
+  padding: 18px !important;
+  padding-left: 14px;
+  font-size: 16px !important;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.1);
+
+}
+.submit{
+  padding-left: 21px !important;
+  padding-bottom: 5px;
+}
+.btn-purple{
+  border-radius: 6px;
+  background: rgba(108, 87, 239, 0.97);
+  padding: 12px 25px;
+  border: none;
+  font-size: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  
+}
+
+.softphone_image {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 50%;
+  padding-left: 20px !important;
+}
+.softphone_image img {
+  width: 650px;
+}
+
+.softphone_image p{
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -30px;
+}
+
+.expert{
+  display: flex;
+  margin: auto !important;
+  justify-content: center !important;
+  padding-left: 0px !important;
+}
+
+/* softphone */
