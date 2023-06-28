@@ -365,8 +365,8 @@ input{
     display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 
   .card{
@@ -405,11 +405,14 @@ input{
   }
 
   .employee{
-    padding: 20px 0px;
+    padding: 10px 0px;
+    padding-top: 15px;
     display: inline-flex;
     justify-content: start;
     align-items: start;
     gap: 15px;
+    width: 100%;
+    padding-left: 20px;
   }
 
   .employee p{
