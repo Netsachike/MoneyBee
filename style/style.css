@@ -1,12 +1,111 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
+/* Reset default styles to ensure consistent rendering across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1 {
-    font-family: 'Another Montserrat', serif;
-  }
-  
+/* Colors */
+:root {
+  --primary-color: #ffc61e;
+  --secondary-color: #1635c3;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+/* h1,
+h2,
+h3 {
+  font-weight: bold;
+  color: var(--primary-color);
+} */
+
+/* Spacing */
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.navbar-brand img {
+  width: 366.638px !important;
+  height: 32px !important;
+  flex-shrink: 0 !important;
+}
+
+.title4 {
+  color: var(--typography-secondary, #525d73) !important;
+  /* Title 4 */
+  font-size: 16px !important;
+  font-family: Montserrat;
+  font-weight: 900 !important;
+}
+
+.custom-button {
+  display: flex;
+  height: 38px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 2px solid var(--outline, #c5ccd8);
+  color: var(--blue, #1635c3);
+  background-color: transparent;
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.withblue {
+  border-radius: 8px;
+  background: var(--blue, #1635c3);
+  color: #fff;
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.hero-section {
+  display: flex;
+  width: 1440px;
+  padding: 0px 0px 80px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.text-button {
+  padding: 80px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  width: 50%
+}
+
+.display2{
+  color: var(--typography-primary, #0b1323);
+  /* Display 2 */
+  font-size: 40px;
+  font-family: Montserrat;
+  width: auto;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
