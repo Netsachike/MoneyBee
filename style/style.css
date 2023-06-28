@@ -155,7 +155,7 @@ h3 {
 }
 
 
-/* hero-section */
+/* hero-section end */
 
 /* exchange section */
 .exchange-section{
@@ -236,7 +236,7 @@ h3 {
 /* exchange section */
 
 
-/* info */
+/* how moneybee works start */
 
 .info{
   display: flex;
@@ -270,9 +270,9 @@ h3 {
   font-size: 18px;
 }
 
-/* info */
+/* how moneybee works end*/
 
-/* softphone */
+/* softphone start*/
 .softphone{
   display: flex;
   width: 100%;
@@ -326,7 +326,7 @@ input{
   background: rgba(108, 87, 239, 0.97);
   padding: 12px 25px;
   border: none;
-  font-size: 10px;
+  font-size: 14px;
   color: var(--text-color);
   font-weight: 500;
   
@@ -361,13 +361,25 @@ input{
 /* softphone end*/
 
 /* slider &  client card */
+.client{
+  text-align: center;
+  margin-top: 60px;
+}
 .slider{
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
   gap: 30px;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-  margin-bottom: 10px;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
 }
 
 .card{
@@ -413,7 +425,7 @@ border: none !important;
   align-items: start;
   gap: 15px;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .employee p{
