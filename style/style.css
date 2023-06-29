@@ -81,7 +81,7 @@ h3 {
 
 .hero-section {
   width: 100%;
-  margin-left: 62px !important;
+  margin-left: 4% !important;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
@@ -124,6 +124,10 @@ h3 {
   gap: 10px;
   flex: 1 0 0;
   align-self: stretch;
+}
+
+.right img{
+  height: 500px;
 }
 
 .button-light {
