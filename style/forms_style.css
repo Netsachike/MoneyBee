@@ -11,6 +11,8 @@
   --primary-color: #ffc61e;
   --secondary-color: #1635c3;
   --text-color: #fff;
+  --button-disabled: #c5ccd8;
+  --typography-disabled: #c5ccd8;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 }
 
 /* Global */
-.container {
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -156,13 +158,45 @@ body {
   align-items: center;
   border-radius: 8px;
   background-color: var(--secondary-color);
-  border: 1.5px solid var(--outline, #c5ccd8);
+  border: 1.5px solid var(#c5ccd8);
 }
 
-
 .login-nav a {
-
   color: var(--blue, #ffffff);
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-next {
+  display: flex;
+  justify-items: start;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.forward-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 56px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 0px 16px 0px 16px;
+  cursor: pointer;
+  background: var(--button-disabled);
+  box-shadow: 0px 12px 30px 0px rgba(247, 247, 247, 0.08);
+  text-decoration: none;
+}
+
+.forward-nav a {
+  color: var(--typography-disable, #939dae);
 
   /* Label 1 */
   font-size: 14px;
@@ -174,5 +208,48 @@ body {
 /* Global end */
 
 /* Basic info section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
+.header h1 {
+  color: var(--typography-primary, #0b1323);
+  margin-bottom: 16px;
+  /* H1 */
+  font-size: 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header p {
+  color: var(--typography-secondary, #525d73);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle {
+  color: var(--typography-primary, #0b1323);
+
+  /* Title 3 */
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 72px;
+  margin-bottom: 66px;
+}
+
+.form-inline .form-group {
+  margin-right: 10px;
+}
 /* Basic info section */

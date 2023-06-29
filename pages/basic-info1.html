@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <title>MoneyBee</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
         <img src="../public/images/sidebar_logo.png" alt="logo">
@@ -41,13 +42,58 @@
           <a class="nav-link" href="#">Back</a>
         </div>
         <div class="nav-button">
-            <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
-            <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
-          </div>
+          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
+          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
         </div>
       </div>
-    </div>
-
+      <div class="header">
+        <h1>Basic info</h1>
+        <p>Let’s start with some basic questions so we can find you the best loan options.</p>
+      </div>
+      <div class="subtitle">
+        <h2>What type of loan are you looking for?</h2>
+      </div>
+      <div class="row">
+        <form class="form-inline">
+          <div class="form-group">
+            <select class="form-control" name="month">
+              <option value="" disabled selected>Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>  
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" name="day">
+              <option value="" disabled selected>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <!-- Add the days here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" name="year">
+              <option value="" disabled selected>Year</option>
+              <!-- Add the years here -->
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="nav-next">
+        <button class="forward-nav"><a class="nav-link" href="#">Next</a></button>
+      </div>
 </body>
 
 </html>
