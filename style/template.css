@@ -266,7 +266,7 @@
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height ease-in-out 1s;
+    transition: max-height ease-in-out 0.5s;
 }
 
 #accordion label + input[type="radio"]:checked + .content{
