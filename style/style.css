@@ -80,12 +80,11 @@ h3 {
 /* hero-section */
 
 .hero-section {
-  display: flex;
-  width: 1440px;
-  padding: 0px 0px 80px 0px;
+  width: 100%;
+  margin-left: 62px !important;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  margin-bottom: 50px;
 }
 
 .hero-section a {
@@ -100,15 +99,6 @@ h3 {
   gap: 32px;
   align-self: stretch;
   width: 50%;
-}
-
-.display2 {
-  color: var(--typography-primary, #0b1323);
-  /* Display 2 */
-  font-size: 40px;
-  font-family: Montserrat;
-  width: auto;
-  font-weight: 500;
 }
 
 .text-button h5 {
