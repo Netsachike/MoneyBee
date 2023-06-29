@@ -372,38 +372,29 @@ input {
   margin-top: 60px;
 }
 .slider {
-  display: grid;
-  grid-auto-flow: column;
-  scroll-behavior: auto;
+  position: relative;
+}
+
+.slides {
+  display: flex;
   gap: 30px;
-  overflow-y: hidden;
-  overscroll-behavior-x: contain;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  padding-left: 50px;
-  margin-bottom: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-.slider::-webkit-scrollbar {
-  height: 8px;
+.slides::-webkit-scrollbar{
+  display: none;
 }
 
-.slider::-webkit-scrollbar-track{
-  background-color: #c7c7c7;
-  border-radius: 2px;
-}
-
-.slider::-webkit-scrollbar-thumb{
-  background-color: #8b8b8b;
-  border-radius: 5px;
+.radio{
+  display: none;
 }
 
 .card {
+  scroll-snap-align: start;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
   display: flex;
-  width: 400px;
+  width: 600px;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
@@ -455,6 +446,21 @@ input {
 .employee span {
   color: #706a6a;
   font-weight: 500;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dots label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #8b8b8b;
+  margin: 0 5px;
+  cursor: pointer
 }
 
 /* client card end*/

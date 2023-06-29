@@ -1,9 +1,0 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Chat_bar_icon_60px">
-<g id="Vector">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5 30C5 27.2386 7.23858 25 10 25H22.5C23.8807 25 25 26.1193 25 27.5V50C25 51.3807 23.8807 52.5 22.5 52.5H7.5C6.11929 52.5 5 51.3807 5 50V30ZM20 30H10V47.5H20V30Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35 20C35 18.6193 36.1193 17.5 37.5 17.5H50C52.7614 17.5 55 19.7386 55 22.5V50C55 51.3807 53.8807 52.5 52.5 52.5H37.5C36.1193 52.5 35 51.3807 35 50V20ZM40 22.5V47.5H50V22.5H40Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20 12.5C20 9.73858 22.2386 7.5 25 7.5H35C37.7614 7.5 40 9.73858 40 12.5V50C40 51.3807 38.8807 52.5 37.5 52.5H22.5C21.1193 52.5 20 51.3807 20 50V12.5ZM35 12.5H25V47.5H35V12.5Z" fill="black"/>
-</g>
-</g>
-</svg>

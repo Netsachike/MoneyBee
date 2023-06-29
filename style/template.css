@@ -168,24 +168,39 @@
     width: 1000px;
     justify-content: center;
     align-items: center;
+    gap: 100px;
 }
 
 .feature_card{
     border-radius: 4px;
-    box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
     background: #fff;
     display: flex;
-    width: 200px;
-    padding: 18px 0px 10px 0px;
+    width: 160px;
+    padding: 18px 0px 0px 0px;
     align-items: center;
     align-self: stretch;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
+}
+
+.feature_card h6{
+    padding-top: 2px;
 }
 
 .feature_card img{
     width: 60px;
     height: 60px;
     color: #1635c3;
+}
+
+.feature_card p{
+    font-size: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 0px 12px;
 }
   
