@@ -16,3 +16,12 @@
             });
         });
     });
+
+    //rotate icon
+
+// let rotate = document.querySelectorAll("li")
+
+// for (let i = 0; i < rotate.length; i++) {
+//     if (rotate[i] === )
+    
+// }
