@@ -32,17 +32,17 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: auto;
 }
 
 .sidebar-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 30%;
-  height: 100%;
+  height: 854px;
   flex-shrink: 0;
   border-radius: 0px 64px 64px 0px;
   background: var(--background, #f4f7fa);
@@ -50,7 +50,7 @@ body {
 }
 
 /* sidebar content */
-.sidebar-section .sidebar-logo {
+.sidebar-logo {
   width: 393px;
   height: 221px;
   flex-shrink: 0;
@@ -60,26 +60,17 @@ body {
 .sidebar_menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 32px;
-  width: 100%;
-}
-
-.sidebar_menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .nav-item {
   display: flex;
-  padding: 24px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 64px;
+  width: 370px;
+  height: 86px;
   border-radius: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding: 0px 16px 0px 16px;
   cursor: pointer;
   background: #fff;
@@ -87,18 +78,40 @@ body {
   text-decoration: none;
 }
 
- .nav-link{
-  text-decoration: none!important;
+.nav-link {
+  text-decoration: none !important;
+  color: var(--blue, #1635c3);
+
+  /* Title 2 */
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .main-section {
-  flex-direction: column;
-  justify-content: flex-start;
   width: 70%;
-  height: 100%;
-  background: var(--background, #d4b400d8);
+  height: 854px;
+  background: var(--background, #ffffffd8);
   padding: 44px 64px 44px 64px;
 }
-/* Global */
 
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Global end */
+
+/* Basic info section */
+  
 /* Basic info section */
