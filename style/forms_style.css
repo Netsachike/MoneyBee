@@ -104,14 +104,75 @@ body {
   justify-content: space-between;
 }
 
-.nav-button{
+.nav-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+}
+
+.fa-angle-left {
+  color: var(--blue, #000000);
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.callus-nav {
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid var(--outline, #c5ccd8);
+}
+
+.callus-nav a {
+  color: var(--blue, #1635c3);
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.login-nav {
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  border: 1.5px solid var(--outline, #c5ccd8);
+}
+
+
+.login-nav a {
+
+  color: var(--blue, #ffffff);
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 /* Global end */
 
 /* Basic info section */
-  
+
 /* Basic info section */
