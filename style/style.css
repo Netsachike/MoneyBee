@@ -538,7 +538,7 @@ input {
   width: 282px;
   color: var(--blue, #1635c3);
   border: 1px solid var(--white, #46474d);
-
+  background-color: #ffffff;
   /* Label 1 */
   font-size: 14px;
   font-family: Montserrat;
