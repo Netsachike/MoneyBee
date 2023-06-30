@@ -438,8 +438,7 @@ input {
   width: 50%;
 }
 .softphone_image img {
-  width: 500px;
-  height: 100%;
+  width: 600px;
 }
 
 .softphone_image p {
@@ -447,13 +446,14 @@ input {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
-  width: 100%;
+  width: 50%;
 }
 
 .expert {
   display: flex;
   justify-content: center !important;
   align-items: center;
+  margin-right: 20px;
 }
 
 /* softphone end*/
@@ -935,5 +935,23 @@ input {
 
   .left1 img{
     width: 100%;
+  }
+}
+
+@media (max-width: 1070px) {
+
+  .softphone{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .softphone_content{
+    width: 100%;
+  }
+
+  .softphone_image{
+    width: 100%;
+    gap: 10px;
   }
 }
