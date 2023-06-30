@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 /* Colors */
@@ -81,7 +81,7 @@ h3 {
 
 .hero-section {
   display: flex;
-  width: 1440px;
+  width: 100%;
   padding: 0px 0px 80px 0px;
   justify-content: center;
   align-items: center;
@@ -166,7 +166,7 @@ h3 {
 }
 .exchange-card {
   display: flex;
-  padding: 20px 20px;
+  padding: 20px 40px;
   width: 78%;
   margin: auto;
   align-items: center;
@@ -236,7 +236,17 @@ h3 {
   color: var(--text-color);
 }
 
+.exc{
+  margin-left: -4%;
+}
+
 /* exchange section */
+
+/* statistics section start */
+.statistics{
+  display: none;
+}
+/* statistics section end */
 
 /* how moneybee works start */
 
@@ -341,12 +351,14 @@ input {
 .softphone_image {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0;
   width: 50%;
-  padding-left: 20px !important;
 }
 .softphone_image img {
-  width: 650px;
+  width: 500px;
+  height: 100%;
 }
 
 .softphone_image p {
@@ -354,14 +366,13 @@ input {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
-  margin-top: -30px;
+  width: 100%;
 }
 
 .expert {
   display: flex;
-  margin: auto !important;
   justify-content: center !important;
-  padding-left: 0px !important;
+  align-items: center;
 }
 
 /* softphone end*/
@@ -373,6 +384,7 @@ input {
 }
 .slider {
   position: relative;
+  height: 100%;
 }
 
 .slides {
@@ -394,14 +406,19 @@ input {
   scroll-snap-align: start;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
   display: flex;
-  width: 600px;
+  width: 400px;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
   border-radius: 16px;
-  position: relative;
   background: #fff;
   border: none !important;
+  height: 600px;
+  position: relative;
+}
+
+.abs{
+  margin-left: -60%;
 }
 
 .star-icon {
@@ -500,6 +517,7 @@ input {
   align-items: flex-end;
   gap: 32px;
   align-self: stretch;
+  width: 100%;
 }
 
 .text-button2 h1 {
@@ -566,18 +584,25 @@ input {
   justify-content: space-around;
   align-items: center;
   background: var(--blue, #1635c3);
-  padding: 10px;
 }
-.footer-left p {
+.footer-left{
+  display: flex;
   margin: 0;
   color: #fff;
   font-size: 20px;
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: normal;
+  gap: 20px;
 }
-.social-media-icons li {
-  display: inline-block;
-  margin-right: 10px;
+
+.footer-left p{
+  padding-top: 7px;
+}
+
+.social-media-icons {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 30px;
 }
 .social-media-icons li:last-child {
   margin-right: 0;
@@ -591,3 +616,238 @@ input {
 }
 /* Add Font Awesome CSS link to your HTML file */
 /* footer */
+
+
+/*Media Query*/
+/* Mobile devices */
+@media (max-width: 767px) {
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  /* header */
+  .navbar-brand img{
+    width: 200px !important;
+  }
+
+  /* hero section */
+  .hero-section {
+    flex-direction: column;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+    gap: 5px;
+  }
+  
+  .text-button {
+    width: 100%;
+  }
+
+  .button-light{
+    width: 100%;
+  }
+  
+  .right {
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+
+  /* exchange section */
+  .exchange-card{
+    flex-direction: column;
+  }
+
+  .line{
+    width: 100%;
+    height: 1px;
+    align-self: stretch;
+    background-color: #333;
+  }
+
+  /* steps */
+
+  .irr-circle{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    padding: 10px 30px !important;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    background: var(--surface, #f4f7fa);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    color: var(--secondary-color);
+    font-size: 25px;
+  }
+
+  /* sofphone */
+  .softphone{
+    flex-direction: column;
+    display: none;
+  }
+
+  .softphone_content{
+    width: 100%;
+  }
+
+/* .statistics */
+  .statistics{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .statistics h5{
+    font-size: 42px;
+    letter-spacing: 1px;
+    font-weight: 500; 
+  }
+
+  .statistics_card{
+    display: flex;
+    padding: 16px 0px;
+    padding-left: 20px;
+    border-radius: 24px;
+    width: 90%;
+    margin: auto;
+    background: #FFF;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text h6{
+    font-size: 22px;
+    
+  }
+  .text p{
+    font-size: 22px;    
+  }
+
+/* testimonial */
+  .client{
+    font-size: 40px;
+  }
+
+  .card{
+    width: 90%;
+  }
+
+  .call_action-section{
+    flex-direction: column-reverse;
+  }
+
+  .left1{
+    width: 100%;
+  }
+
+  .right2{
+    width: 100%;
+  }
+
+  .button-light2{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subcribe, .call_us{
+    width: 100% !important;
+  }
+
+  /* footer */
+  .row-footer{
+    flex-direction: column-reverse;
+    padding: 24px 0px;
+    width: 100%;
+  }
+
+  .footer-left{
+    flex-direction: column;
+    text-align: center;
+    gap: 1px;
+  }
+
+
+  .social-media-icons{
+    margin-right: 25px;
+  }
+
+
+}
+
+@media (min-width: 545px) and (max-width: 768px) {
+  .navbar-brand img{
+    width: 300px !important;
+  }
+}
+  
+@media (max-width: 1110px) {
+  /* hero section */
+  .hero-section {
+    flex-direction: column;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+    gap: 5px;
+  }
+  
+  .text-button {
+    width: 100%;
+  }
+
+  .button-light{
+    width: 100%;
+  }
+  
+  .right {
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+
+  /* exchange section */
+  .exchange-card{
+    flex-direction: column;
+    padding: 8px 0px;
+    gap: 18px;
+  }
+
+  .line{
+    width: 80%;
+    height: 1px;
+    align-self: stretch;
+    background-color: #333;
+    margin: auto;
+  }
+
+  .call_action-section{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .left2, .right2{
+    width: 100%;
+  }
+
+  .subcribe, .call_us{
+    width: 100% !important;
+  }
+
+  .left1{
+    align-items: center;
+    width: 100%;
+  }
+
+  .left1 img{
+    width: 100%;
+  }
+}
