@@ -7,27 +7,10 @@
   <link rel="stylesheet" href="../style/forms_style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-  <link rel="stylesheet" href="<link rel=" stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://kit.fas fa-tag.com/b68d968969.js" crossorigin="anonymous"></script>
+  <!-- -->
+  <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
+  <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
-  <style>
-    .question {
-      display: none;
-    }
-  </style>
-  <script>
-    function showNextQuestion(currentQuestion) {
-      currentQuestion.style.display = 'none'; // Hide the current question
-
-      var nextQuestion = currentQuestion.nextElementSibling;
-      if (nextQuestion) {
-        nextQuestion.style.display = 'block'; // Show the next question
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -77,10 +60,11 @@
               <h2>How much money do you need?</h2>
             </div>
             <div class="input_button">
-              <input class="form-control form-control-lg" type="text"
-                placeholder="0 USD" aria-label=".form-control-lg example">
+              <input class="form-control form-control-lg" type="text" placeholder="0 USD"
+                aria-label=".form-control-lg example">
             </div>
-            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link" href="#">Next</a></button>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
           <div class="question" id="question2">
             <div class="subtitle">
@@ -100,14 +84,15 @@
                 </div>
               </div>
             </div>
-              <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link" href="#">Next</a></button>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
-          <div class="question" id="question3">
+          <!-- <div class="question" id="question3">
             <div class="subtitle">
               <h2>What type of loan are you looking for?</h2>
             </div>
             <div class="col">
-              <form class="form-inline">
+              <form class="form">
                 <div class="form-group">
                   <select class="form-control" name="month" style="width: 232px; height: 56px;">
                     <option value="" disabled selected>Month</option>
@@ -129,7 +114,7 @@
                   <select class="form-control" name="year" style="width: 232px; height: 56px;">
                     <option value="" disabled selected>Year</option>
                     <!-- Add the years here -->
-                  </select>
+          <!-- </select>
                 </div>
                 <div class="form-group">
                   <button class="btn btn-outline-primary">I haven’t started business yet</button>
@@ -137,7 +122,7 @@
                 <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link" href="#">Next</a></button>
               </form>
             </div>
-          </div>
+          </div> -->
           <div class="question" id="question4">
             <div class="subtitle">
               <h5>Average monthly sales</h5>
@@ -161,7 +146,8 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link" href="#">Next</a></button>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
           <div class="question" id="question5">
             <div class="subtitle">
@@ -183,9 +169,10 @@
                 </div>
               </form>
             </div>
-            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link" href="#">Next</a></button>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
-          <div class="info_content_6" id="info_content_6">
+          <div class="question" id="question5">
             <div class="subtitle">
               <h5>Let’s learn a little bit about your business. Select all that apply.
               </h5>
@@ -193,47 +180,79 @@
             <div class="container text-center ">
               <div class="col">
                 <div class="row button-group">
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
-                    cards</button>
-                </div>
-                <div class="row button-group">
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
-                    cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
-                    cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
                 </div>
                 <div class="row button-group">
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
+                    cards</button>
+                </div>
+                <div class="row button-group">
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
+                    cards</button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
+                    cards</button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
                 </div>
                 <div class="row">
-                  <i class="fas fa-tag fa-sm"></i>
-                  <button type="button" class="btn btn-outline-primary apply-btn">Accept credit
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;"><i class="fas fa-tag fa-lg"></i>Accept credit
                     cards</button>
                 </div>
               </div>
             </div>
+            <button class="nav-next forward-nav" style="" onclick="showNextQuestion(this.parentElement)"><a
+                class="nav-link" href="#">Next</a></button>
           </div>
-          <div class="info_content_7" id="info_content_7">
+          <div class="question" id="question7">
             <div class="subtitle">
               <h5>What purpose would your loan serve? Select all that apply.</h5>
             </div>
@@ -255,8 +274,10 @@
                 </div>
               </div>
             </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
-          <div class="info_content_8" id="info_content_8">
+          <div class="question" id="question8">
             <div class="subtitle">
               <h5>Have you ever filed for bankruptcy?</h5>
             </div>
@@ -273,8 +294,10 @@
                 </label>
               </div>
             </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
-          <div class="info_content_9" id="info_content_9">
+          <div class="question" id="question9">
             <div class="subtitle">
               <h4>Which state is your business in?</h4>
             </div>
@@ -289,8 +312,10 @@
                 </div>
               </form>
             </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
-          <div class="info_content_10" id="info_content_10">
+          <div class="question" id="question10">
             <div class="subtitle">
               <h2>What type of loan are you looking for?</h2>
             </div>
@@ -332,9 +357,11 @@
                 </div>
               </form>
             </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a></button>
           </div>
         </div>
-        <div class="info_content_11" id="info_content_11">
+        <div class="question" id="question11">
           <div class="subtitle">
             <h4>Business ownership percentage</h4>
           </div>
@@ -346,8 +373,10 @@
               </div>
             </form>
           </div>
+          <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+              href="#">Next</a></button>
         </div>
-        <div class="info_content_12" id="info_content_12">
+        <div class="question" id="question12">
           <div class="subtitle">
             <h5>Annual Personal Income
             </h5>
@@ -401,10 +430,6 @@
             </div>
           </div>
         </div>
-        <script>
-          // Show the first question initially
-          document.getElementById('question1').style.display = 'block';
-        </script>
 </body>
 
 </html>

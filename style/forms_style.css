@@ -258,9 +258,10 @@ body {
   margin-right: 10px;
 }
 
-#info_content_5 {
+.question {
   display: none;
 }
+
 
 #info_content_6 {
   display: none;
