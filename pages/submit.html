@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <!-- -->
+  <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
+  <script src="../js/forms.js"></script>
+  <title>MoneyBee</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="sidebar-section">
+      <div class="sidebar-logo">
+        <img src="../public/images/sidebar_logo.png" alt="logo">
+      </div>
+      <div class="sidebar_menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link" href="#section1" style="color: green;">Basic info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link" href="#section2" style="color: green;">Owner info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link"href="#section3" style="color: green;">Business info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle"></i>
+            <a class="nav-link" href="#section4">Submit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-section">
+      <div class="nav-container">
+        <div class="back">
+          <i class="fas fa-angle-left"></i>
+          <a class="nav-link" href="#">Back</a>
+        </div>
+        <div class="nav-button">
+          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
+          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+        </div>
+      </div>
+      <div class="basic-info col-10">
+        <div class="question" id="question6">
+          <div class="header">
+              <h1>Submitting your application</h1>
+          </div>
+          <div class="submit">
+            <div class="submit-col col-6">
+              <p>Calculating loan rates</p>
+              <p>Analyzing numbers</p>
+              <p>Packaging application together</p>
+            </div>
+
+            <div class="submit-line col-6">
+                <div class="submit-row">
+                  <div class="line"></div>
+                  <img src="/public/icons/task-success.svg" alt="">
+                </div>
+                <div class="submit-row">
+                  <div class="line-two"></div>
+                  <img src="/public/icons/task-unsuccess.svg" alt="">
+                </div>
+                <div class="submit-row">
+                  <div class="line line-three"></div>
+                  <img src="/public/icons/task-unsuccess.svg" alt="">
+                </div>
+            </div>
+          </div>
+          <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+              href="#">Next</a>
+          </button>
+      </div>
+      </div>
+    </div>
+</div>
+</body>
