@@ -39,6 +39,10 @@
     height: 32px !important;
     flex-shrink: 0 !important;
   }
+
+  .navbar-toggler{
+    border: none !important;
+  }
   
   .title4 {
     color: var(--typography-secondary, #525d73) !important;
@@ -110,6 +114,7 @@
 
 .close{
   width: 50px;
+  cursor: pointer;
 }
 
 .line-hz2{

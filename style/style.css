@@ -113,6 +113,7 @@ h3 {
 
 .close{
   width: 50px;
+  cursor: pointer;
 }
 
 .line-hz2{
