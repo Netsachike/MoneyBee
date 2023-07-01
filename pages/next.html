@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Form</title>
+    <style>
+        .question {
+            display: none;
+        }
+    </style>
+    <script>
+        function showNextQuestion(currentQuestion) {
+            currentQuestion.style.display = 'none'; // Hide the current question
+
+            var nextQuestion = currentQuestion.nextElementSibling;
+            if (nextQuestion) {
+                nextQuestion.style.display = 'block'; // Show the next question
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Dynamic Form</h1>
+
+    <form>
+        <div class="question" id="question1">
+            <label>Question 1:</label>
+            <input type="text">
+            <button type="button" onclick="showNextQuestion(this.parentElement)">Next</button>
+        </div>
+
+        <div class="question" id="question2">
+            <label>Question 2:</label>
+            <input type="text">
+            <button type="button" onclick="showNextQuestion(this.parentElement)">Next</button>
+        </div>
+
+        <div class="question" id="question3">
+            <label>Question 3:</label>
+            <input type="text">
+            <button type="button" onclick="showNextQuestion(this.parentElement)">Submit</button>
+        </div>
+
+        <div class="question" id="question4">
+            <label>Thank you!</label>
+            <button type="button" onclick="showNextQuestion(this.parentElement)">Continue</button>
+            </div>
+    </form>
+
+    <script>
+        // Show the first question initially
+        document.getElementById('question1').style.display = 'block';
+    </script>
+</body>
+
+</html>

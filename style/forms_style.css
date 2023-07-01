@@ -45,7 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 854px;
+  height: 900px;
   flex-shrink: 0;
   border-radius: 0px 64px 64px 0px;
   background: var(--background, #f4f7fa);
@@ -181,9 +181,8 @@ body {
 
 .nav-next {
   display: flex;
-  justify-items: start;
-  align-items: flex-start;
-  margin-top: 40px;
+  justify-content: flex-start;
+  margin-top: 47px;
 }
 
 .forward-nav {
@@ -194,7 +193,6 @@ body {
   width: 150px;
   height: 56px;
   border-radius: 8px;
-  margin-bottom: 20px;
   padding: 0px 16px 0px 16px;
   cursor: pointer;
   background: var(--button-disabled);
@@ -260,23 +258,23 @@ body {
   margin-right: 10px;
 }
 
-#info_content_1 {
-  display: none;
-}
-
-#info_content_2 {
-  display: none;
-}
-
-#info_content_3 {
-  display: none;
-}
-
-#info_content_4 {
-  display: none;
-}
-
 #info_content_5 {
+  display: none;
+}
+
+#info_content_6 {
+  display: none;
+}
+
+#info_content_7 {
+  display: none;
+}
+
+#info_content_8 {
+  display: none;
+}
+
+  #info_content_9 {
   display: none;
 }
 
@@ -284,11 +282,27 @@ body {
   display: none;
 }
 
-.button-group {
-  margin-bottom: 38px;
+#info_content_11 {
+  display: none;
 }
 
-.btn-outline-secondary {
+#info_content_12 {
+  display: none;
+}
+
+#info_content_13 {
+  display: none;
+}
+
+#loan-success {
+  display: none;
+}
+
+.button-group {
+  margin-bottom: 30px;
+}
+
+.btn-outline-primary {
   width: 240px;
   height: 56px;
   border-radius: 10px;
@@ -325,5 +339,26 @@ body {
   justify-content: center;
   color: var(--blue, #000000);
   font-size: 36px;
+}
+
+.container-checkbox input{
+  width: 20px!important;
+  height: 20px!important;
+
+}
+
+.container-checkbox {
+  color: var(--typography-primary, #0B1323);
+
+/* Body 1 */
+font-size: 20px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.form-group {
+  margin-left: 15px;
 }
 /* Basic info section */
