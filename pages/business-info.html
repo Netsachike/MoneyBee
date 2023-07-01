@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <!-- -->
+  <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
+  <script src="../js/forms.js"></script>
+  <title>MoneyBee</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="sidebar-section">
+      <div class="sidebar-logo">
+        <img src="../public/images/sidebar_logo.png" alt="logo">
+      </div>
+      <div class="sidebar_menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link" href="#section1" style="color: green;">Basic info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link" href="#section2" style="color: green;">Owner info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle"></i>
+            <a class="nav-link"href="#section3">Business info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: darkgray;"></i>
+            <a class="nav-link" style="color: darkgray;" href="#section4">Submit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-section">
+      <div class="nav-container">
+        <div class="back">
+          <i class="fas fa-angle-left"></i>
+          <a class="nav-link" href="#">Back</a>
+        </div>
+        <div class="nav-button">
+          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
+          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+        </div>
+      </div>
+      <div class="basic-info col-10">
+          <div class="question" id="question1">
+            <div class="header sub-header">
+                <h1>Tell us about your business</h1>
+                <p>We want to goin a better understand of your business to got you the best offer.</p>
+            </div>
+            <form class="g-5 mt-5 form-column">
+                <div class="name">
+                    <input type="text" class="form-control" placeholder="Business Street Address">
+                </div>
+                <div class="name">
+                    <input type="text" class="form-control" placeholder="Business City">
+                </div>
+                <div class="row business-location">
+                    <select class="form-control col-5 px-1" name="month" style="height: 49px;">
+                        <option value="" disabled selected>Business State</option>
+                    </select>
+                    <div class="col-7 name">
+                        <input type="text" class="form-control" placeholder="Business Zip Code">
+                    </div>
+                </div>
+                <div class="col-8 name business-location px-0 mt-5 row new-icon">
+                    <input type="text" class="form-control col-11" placeholder="Federal/state tax ID">
+                    <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                </div>
+                <div class="col-8 name business-location px-0 row new-icon">
+                    <input type="text" class="form-control col-11" placeholder="Number Of Employees">
+                    <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                </div>
+                <div class="col-8 name business-location px-0 row new-icon">
+                    <input type="text" class="form-control col-11" placeholder="DBA Name Optional">
+                    <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                </div>
+                <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                    href="#">Next</a>
+                </button>
+        </div>
+    </div>
+</body>

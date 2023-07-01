@@ -394,10 +394,32 @@ input{
   gap: 19px;
 }
 
-.option-container select{
+select{
   border-radius: 8px !important;
 }
 
 span{
+  cursor: pointer;
+}
+
+.business-location{
+  margin-left: 1px !important;
+}
+
+.new-icon input{
+  border: none !important;
+}
+
+.new-icon{
+  border: 1px solid #b0adad;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.icon-info{
+  margin: auto;
+  width: 20px;
   cursor: pointer;
 }
