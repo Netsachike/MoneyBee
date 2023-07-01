@@ -364,7 +364,7 @@ input{
 }
 
 .tc input{
-  margin-top: 3px !important;
+  margin-top: 7px !important;
 }
 
 .highlight{
@@ -387,4 +387,17 @@ input{
   align-self: stretch;
   font-weight: normal;
   letter-spacing: 1px;
+}
+
+.option-container{
+  margin-left: 1px !important;
+  gap: 19px;
+}
+
+.option-container select{
+  border-radius: 8px !important;
+}
+
+span{
+  cursor: pointer;
 }

@@ -51,7 +51,7 @@
           <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
         </div>
       </div>
-      <div class="basic-info col-7">
+      <div class="basic-info col-8">
           <div class="question" id="question1">
             <div class="header sub-header">
                 <h1>Create an account</h1>
@@ -132,7 +132,7 @@
                     <input type="text" class="form-control" placeholder="Owner's city">
                 </div>
                 <div class="row state-container">
-                    <select class="form-control col-6 px-0" name="month" style="width: 200px; height: 49px;">
+                    <select class="form-control col-6 px-1" name="month" style="width: 200px; height: 49px;">
                         <option value="" disabled selected>Owner's state</option>
                       </select>
                       <div class="name col-6">
@@ -156,17 +156,24 @@
                 <h4>Owner date of birth</h4>
             </div>
             <form class="form">
-                <div class="row state-container g-3">
-                    <select class="form-control col-4 px-0" name="month" style="height: 49px;">
+                <div class="row option-container">
+                    <select class="form-control col-3 px-1" name="month" style="height: 49px;">
                         <option value="" disabled selected>Month</option>
                       </select>
-                      <select class="form-control col-4 px-0" name="day" style="height: 49px;">
+                      <select class="form-control col-3 px-1" name="day" style="height: 49px;">
                         <option value="" disabled selected>Day</option>
-                      <select class="form-control col-4 px-0" name="year" style="height: 49px;">
+                      </select>
+                      <select class="form-control col-3 px-1" name="year" style="height: 49px;">
                         <option value="" disabled selected>Year</option>
                       </select>
                 </div>
+
+                <div class="name mt-4 mb-4 col-10 px-0 mx-0">
+                    <input type="text" class="form-control" placeholder="Social Security Number">
+                </div>
             </form>
+            <p class="cred-chek">By clicking the button below lorem ipsum <span class="highlight">Terms and Conditions</span></p>
+            <p class="cred-chek">This will not hurt your credit</p>
 
             <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                 href="#">Next</a>
