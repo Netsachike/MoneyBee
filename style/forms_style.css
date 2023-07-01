@@ -213,6 +213,10 @@ body {
 /* Global end */
 
 /* Basic info section */
+.basic-info{
+  padding-bottom: 10px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -363,3 +367,57 @@ line-height: normal;
   margin-left: 15px;
 }
 /* Basic info section */
+
+
+/*Owner info section */
+.form-column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  border-radius: 8px !important;
+}
+
+.name input{
+  padding: 24px 10px !important;
+}
+
+.terms{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.tc{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 5px;
+}
+
+.tc input{
+  margin-top: 3px !important;
+}
+
+.highlight{
+  text-decoration: underline;
+  color: #1635C3
+}
+
+.vef-code{
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.state-container{
+  margin-left: 1px !important;
+}
+
+.header h6{
+  color: #525D73;
+  align-self: stretch;
+  font-weight: normal;
+  letter-spacing: 1px;
+}

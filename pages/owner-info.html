@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <!-- -->
+  <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
+  <script src="../js/forms.js"></script>
+  <title>MoneyBee</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="sidebar-section">
+      <div class="sidebar-logo">
+        <img src="../public/images/sidebar_logo.png" alt="logo">
+      </div>
+      <div class="sidebar_menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: green;"></i>
+            <a class="nav-link" href="#section1" style="color: green;">Basic info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle"></i>
+            <a class="nav-link" href="#section2">Owner info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: darkgray;"></i>
+            <a class="nav-link" style="color: darkgray;" href="#section3">Business info</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-info-circle" style="color: darkgray;"></i>
+            <a class="nav-link" style="color: darkgray;" href="#section4">Submit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-section">
+      <div class="nav-container">
+        <div class="back">
+          <i class="fas fa-angle-left"></i>
+          <a class="nav-link" href="#">Back</a>
+        </div>
+        <div class="nav-button">
+          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
+          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+        </div>
+      </div>
+      <div class="basic-info col-7">
+          <div class="question" id="question1">
+            <div class="header sub-header">
+                <h1>Create an account</h1>
+                <p>Let’s create an account, so you can return any time and see your loan options. Get a decision quickly with no obligation.</p>
+            </div>
+            <div class="subtitle">
+                <h2>How much money do you need?</h2>
+            </div>
+            <form class="g-5 mt-5 form-column">
+                <div class="row g-3">
+                    <div class="col-6 name">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-6 name">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6 name">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-6 name">
+                        <input type="text" class="form-control" placeholder="Mobile phone">
+                    </div>
+                </div>
+                <div class="name">
+                    <input type="text" class="form-control" placeholder="Business name">
+                </div>
+                <div class="name">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="name">
+                    <input type="password" class="form-control" placeholder="Confirm password">
+                </div>
+            </form>
+            <div class="terms">
+                <div class="tc mt-3">
+                    <input type="checkbox"> 
+                    <p>I agree to the <span class="highlight">Terms and Conditions</span></p>
+                </div>
+                <div class="tc">
+                    <input type="checkbox"> 
+                    <p>Accept messages, calls, emails</p>
+                </div>
+            </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a>
+            </button>
+        </div>
+
+        <div class="question" id="question2">
+            <div class="header sub-header">
+                <h1>Email Verification</h1>
+                <p>We have emailed a verification code to loremipsum@gmail.com. Please enter the code below.</p>
+            </div>
+            <div class="input_button col-6 mt-5 px-0 name">
+                <input class="form-control form-control-lg" type="text" placeholder="Verification code"
+                  aria-label=".form-control-lg example">
+            </div>
+            <div class="vef-code px-2 mt-1">
+                <p class="pl-2">Didn't receive a code?</p><span class="pr-2 highlight"> Send another code</span>
+            </div>
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a>
+            </button>
+        </div>
+
+        <div class="question" id="question3">
+            <div class="header sub-header">
+                <h1>Owner information</h1>
+                <p>We’re gathering this information beacuse lenders do background checks on owners as part of the loan underwriting process.</p>
+            </div>
+            <form class="form">
+                <div class="name mt-5 mb-4">
+                    <input type="text" class="form-control" placeholder="Owner's street address">
+                </div>
+                <div class="name mt-2 mb-4">
+                    <input type="text" class="form-control" placeholder="Owner's city">
+                </div>
+                <div class="row state-container">
+                    <select class="form-control col-6 px-0" name="month" style="width: 200px; height: 49px;">
+                        <option value="" disabled selected>Owner's state</option>
+                      </select>
+                      <div class="name col-6">
+                        <input type="text" class="form-control" placeholder="Owner's city">
+                    </div>
+                </div>
+            </form>
+
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a>
+            </button>
+        </div>
+
+        <div class="question" id="question3">
+            <div class="header sub-header">
+                <h1>Owner credit check</h1>
+                <p>A credit check is required to receive offers. Don’t worry, this is a soft credit pull and won’t impact your credit.</p>
+                <h6 class="mt-3">POWERED BY EXPLORIA</h6>
+            </div>
+            <div class="subtitle">
+                <h4>Owner date of birth</h4>
+            </div>
+            <form class="form">
+                <div class="row state-container g-3">
+                    <select class="form-control col-4 px-0" name="month" style="height: 49px;">
+                        <option value="" disabled selected>Month</option>
+                      </select>
+                      <select class="form-control col-4 px-0" name="day" style="height: 49px;">
+                        <option value="" disabled selected>Day</option>
+                      <select class="form-control col-4 px-0" name="year" style="height: 49px;">
+                        <option value="" disabled selected>Year</option>
+                      </select>
+                </div>
+            </form>
+
+            <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                href="#">Next</a>
+            </button>
+        </div>
+    </div>
+</body>
