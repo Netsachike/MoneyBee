@@ -535,20 +535,20 @@ align-items: flex-start;
 
 /*submit*/
 
-.submit{
+.submit2{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
-.submit-col{
+.submit2-col{
   display: column;
   gap: 30px;
   align-items: center;
   justify-content: start;
 }
 
-.submit-col p{
+.submit2-col p{
   color: var(--typography-primary, #0B1323);
 /* Title 3 */
   font-size: 20px;
@@ -559,7 +559,7 @@ align-items: flex-start;
   padding-top: 8px;
 }
 
-.submit-line{
+.submit2-line{
   display: flex;
   flex-direction: column;
   gap: 25px !important;
@@ -568,7 +568,7 @@ align-items: flex-start;
   padding-top: 5px;
 }
 
-.submit-row{
+.submit2-row{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -719,6 +719,30 @@ align-items: flex-start;
 
 }
 /* login screen end */
+
+@media (max-width: 768px) {
+  .login-image{
+    display: none;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    box-shadow: none !important;  
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1110px) {
   .login-image{
