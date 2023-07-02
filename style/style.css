@@ -460,6 +460,36 @@ input {
 /* softphone end*/
 
 /* slider &  client card */
+.prev,
+.next {
+  background: #FFF;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--secondary-color);
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+.slider-but {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .client {
   text-align: center;
   margin-top: 60px;
