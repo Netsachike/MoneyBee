@@ -4,20 +4,28 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
+
 }
 
 /* Colors */
 :root {
-  --primary-color: #ffc61e;
-  --secondary-color: #1635c3;
+  /* --primary-color: #ffc61e;
+  --secondary-color: #1635c3; */
   --text-color: #fff;
   --button-disabled: rgba(0, 0, 0, 0.12);
   --typography-disabled: #c5ccd8;
   --typography-primary: #0b1323;
 }
+:root {
+  --primary-color: #B5A300;
+  --secondary-color: #007be5;
+  --typography: #fff;
+}
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Arial, sans-serif; 
+  background: #F0EEDE;
 }
 
 /* Spacing */
@@ -29,7 +37,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Global */
+/* Global ---------------------------------------------*/
 .content {
   display: flex;
   flex-direction: row;
@@ -50,6 +58,7 @@ body {
   border-radius: 0px 64px 64px 0px;
   background: var(--background, #f4f7fa);
   padding: 44px 64px 64px 64px;
+
 }
 
 /* sidebar content */
@@ -87,7 +96,7 @@ body {
 
   /* Title 2 */
   font-size: 20px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -141,18 +150,23 @@ body {
   align-items: center;
   border-radius: 8px;
   background-color: #fff;
-  border: 1px solid var(--outline, #c5ccd8);
+  border: 0px ;
+}
+.callus-nav:hover {
+  border-radius: 0;
+  border: 3px solid var(--secondary-color)
 }
 
 .callus-nav a {
-  color: var(--blue, #1635c3);
 
   /* Label 1 */
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+ color: var(--primary-color)
 }
 
 .login-nav {
@@ -164,16 +178,21 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background-color: var(--secondary-color);
-  border: 1.5px solid var(#c5ccd8);
+  background: var( --primary-color);
+  border-width: 0px;
 }
+.login-nav:hover {
+  border-radius: 0;
+  border: 3px solid var(--secondary-color);
+}
+
 
 .login-nav a {
   color: #fff !important;
 
   /* Label 1 */
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -187,6 +206,37 @@ body {
 
 .forward-nav {
   display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 0px 16px 0px 16px;
+  cursor: pointer;
+  box-shadow: 0px 12px 30px 0px rgba(247, 247, 247, 0.08);
+  text-decoration: none;
+  background: var( --primary-color);
+  border-width: 0px;
+}
+
+
+.forward-nav a {
+  color: var(--typography);
+
+  /* Label 1 */
+  font-size: 14px;
+  font-family: Arial, sans-serif; /*Montserrat*/;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.forward-nav a:hover {
+  color: var(--typography);
+}
+
+.backward-nav {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -195,24 +245,26 @@ body {
   border-radius: 8px;
   padding: 0px 16px 0px 16px;
   cursor: pointer;
-  background: var(--button-disabled);
-  box-shadow: 0px 12px 30px 0px rgba(247, 247, 247, 0.08);
   text-decoration: none;
+
+  background: transparent;
+  border-width: 0px;
+  border: 2px solid var(--primary-color);
+  margin-right: 30px;
+  float: left;
 }
-
-.forward-nav a {
-  color: var(--typography-disable, #939dae);
-
-  /* Label 1 */
-  font-size: 14px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.backward-nav a {
+  color: var(--primary-color);
 }
-/* Global end */
+.backward-nav a:hover {
+  color: var(--primary-color);
+}
+.setting {
+  margin-top: 30px!important;
+}
+/* Global ------------------------------------------end */
 
-/* Basic info section */
+/* Basic info section ---------------------------------*/
 .basic-info{
   padding-bottom: 10px;
 }
@@ -230,7 +282,7 @@ body {
   margin-bottom: 16px;
   /* H1 */
   font-size: 32px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -239,23 +291,33 @@ body {
 .header p {
   color: var(--typography-secondary, #525d73);
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.subtitle {
+/* .subtitle {
   color: var(--typography-primary, #0b1323);
-
-  /* Title 3 */
   font-size: 20px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; 
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: 72px;
   margin-bottom: 43px;
+} */
+
+
+.subtitle {
+  color: var(--typography-primary, #0b1323);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 27px;
 }
 
 .form-inline .form-group {
@@ -285,7 +347,7 @@ body {
 
   /* TItle 5 */
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -305,7 +367,7 @@ body {
 
   /* TItle 5 */
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -317,17 +379,9 @@ body {
   font-size: 36px;
 }
 
-.container-checkbox input {
-  width: 20px !important;
-  height: 20px !important;
-}
-
 .container-checkbox {
   color: var(--typography-primary, #0b1323);
-
-  /* Body 1 */
-  font-size: 20px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; 
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -336,14 +390,17 @@ body {
 .form-group {
   margin-left: 15px;
 }
-/* Basic info section */
+/* Basic info section -------------------------end*/
 
 
-/*Owner info section */
+
+
+/*Owner info section -------------------------------*/
 .form-column{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 700px;
 }
 
 input{
@@ -351,7 +408,7 @@ input{
 }
 
 .name input{
-  padding: 24px 10px !important;
+  padding: 19px 10px !important;
 }
 
 .terms{
@@ -464,24 +521,25 @@ span{
 
 .information{
   display: inline-flex;
-  height: 644px;
+  height: 50%;
   padding: 24px;
   align-items: flex-start;
   gap: 40px;
   flex-shrink: 0;
 }
-
 .owner{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(300px, auto));
+  gap: 13px;
+
   border-radius: 16px;
   background: #FFF;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
-  height: 70vh;
+  height: 50vh;
   overflow-y: auto;
-}
+
+  margin: 0 25px 0 -25px;
+} 
 
 .owner::-webkit-scrollbar{
   width: 6px;  
@@ -503,7 +561,7 @@ span{
 
   /* Label 1 */
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -520,8 +578,8 @@ span{
   margin: 0px auto;
 }
 
-.innput-content{
-  display: flex;
+.input-content{
+display: flex;
 width: 280px;
 flex-direction: column;
 align-items: flex-start;
@@ -530,8 +588,19 @@ align-items: flex-start;
 .input-content p{
   margin-bottom: 0 !important;
 }
-/*business-info section end*/
+/*Owner info section -----------------------------end*/
 
+
+/*business-info section-----------------------------*/
+.px-1 {
+  padding-left: 0.5rem !important;
+}
+.header p {
+  margin-top: 0;
+  text-align: center;
+} 
+
+/*business-info section---------------------------end*/
 
 /*submit*/
 
@@ -552,7 +621,7 @@ align-items: flex-start;
   color: var(--typography-primary, #0B1323);
 /* Title 3 */
   font-size: 20px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -643,10 +712,6 @@ align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
 .form-group label {
   font-weight: bold;
 }
@@ -691,7 +756,7 @@ align-items: flex-start;
 
   /* Body 2 */
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: Arial, sans-serif; /*Montserrat*/;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -825,3 +890,5 @@ align-items: flex-start;
     box-shadow: none !important;  
   }
 }
+
+/*-----------------------------------------------------------------------*/

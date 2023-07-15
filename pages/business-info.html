@@ -5,19 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/forms_style.css">
+
+  <link rel="stylesheet" href="../style/form_progress_bar.css">
+  <link rel="stylesheet" href="../style/m_section.css">
+  <link rel="stylesheet" href="../style/business_info.css">
+  
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
   <!-- -->
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
+  <style>
+    .progress{
+        width: 65%; background: var(--primary-color); height: 4px !important;
+    }
+    @media (max-width: 785px){
+        .progress{
+        width: 65%; background: var(--primary-color); height: 4px !important;
+    }
+
+}
+ </style>
 </head>
 
 <body>
   <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
-        <img src="../public/images/sidebar_logo.png" alt="logo">
+        <img src="../public/images/logo-design-transparent.png" alt="logo" style=" margin-top: -26px; width: 100%;">
       </div>
       <div class="sidebar_menu">
         <ul class="nav flex-column">
@@ -47,12 +64,21 @@
           <a class="nav-link" href="#">Back</a>
         </div>
         <div class="nav-button">
-          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
-          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+            <button class="callus-nav"><a class="nav-link" href="#">Sign up</a></button>
+            <button class="login-nav"><a class="nav-link" href="#">Sign in</a></button>
         </div>
       </div>
+        <!-- progress bar -->
+        <div class="progressbar">
+            <div class="progress" id="progress"></div> 
+            <div class="progress-step progress-step-active" data-title="Basic info"></div>
+            <div class=" progress-step progress-step-active" data-title="Owner info"></div>
+            <div class="progress-step progress-step-active" data-title="Business info"></div>
+            <div class="progress-step" data-title="Submit"></div>
+        </div>
+        <!-- progress bar -->
       <div class="basic-info col-10">
-          <div class="question" id="question1">
+            <div class="question form-step-active" id="question1">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
@@ -74,19 +100,22 @@
                     </div>
                     <div class="col-8 name business-location px-0 mt-5 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Federal/state tax ID">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Number Of Employees">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="DBA Name Optional">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
-                <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                    href="#">Next</a>
+
+                <a class="nav-link  five-alive" href="./owner-info.html" style="color: #B5A300; margin-left: -13px;"><div class="backward-nav setting">Back</div></a> 
+            
+                <button class="nav-next forward-nav" style="margin-top: 21px;" onclick="showNextQuestion(this.parentElement)"><a
+                        class="nav-link" href="#">Next</a>
                 </button>
             </div>
             <div class="question" id="question2">
@@ -102,12 +131,18 @@
                         <input type="text" class="form-control col-7 focus" placeholder="0">
                         <div class="new-icon-small-content col-5">
                             <p>USD</p>
-                            <img src="/public/icons/info-icon.svg" alt="" class="icon-info-small">
+                            <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                         </div>
                     </div>
                 </form>
-                <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
+                </button> -->
+                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                      href="#">Next</a>
                 </button>
             </div>
             <div class="question" id="question3">
@@ -117,17 +152,23 @@
                 </div>
                 <form class="g-5 mt-5 form-column">
                     <div class="col-8 mx-0 px-0">
-                        <select class="form-control px-0" name="month" style="height: 49px;">
+                        <select class="form-control " name="month" style="height: 49px;">
                             <option value="" disabled selected class="py-1">Business State</option>
                         </select>
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Federal/state tax ID">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
-                <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
+                </button> -->
+                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                      href="#">Next</a>
                 </button>
             </div>
             <div class="question" id="question4">
@@ -138,11 +179,11 @@
                 <form class="g-5 mt-5 form-column mb-3">
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Number Of Additional Beneficiary Owners">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Number Of Additional Mangaging Partners">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info" style="color: var(--secondary-color);">
                     </div>
 
                     <p style="font-size: 18px;">Do you have existing or current business loans?</p>
@@ -151,11 +192,11 @@
                         <div class="row" style="
                         justify-content: start; gap: 20px;">
                           <label class="container-checkbox">Yes
-                            <input type="checkbox" checked="checked">
+                            <input type="radio" checked="checked">
                             <span class="checkmark"></span>
                           </label>
                           <label class="container-checkbox">No
-                            <input type="checkbox">
+                            <input type="radio">
                             <span class="checkmark"></span>
                           </label>
                         </div>
@@ -163,11 +204,17 @@
 
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Existing Business Loan Amount">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
-                <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                <!-- <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
+                </button> -->
+                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+                <button class="forward-nav" style="margin-top: 46px;" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                      href="#">Next</a>
                 </button>
             </div>
             <div class="question" id="question5">
@@ -189,8 +236,14 @@
                         </div>
                     </div>
                 </form>
-                <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                <!-- <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
+                </button> -->
+                <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                      href="#">Next</a>
                 </button>
             </div>
             <div class="question" id="question6">
@@ -201,19 +254,25 @@
                 <form class="g-5 mt-5 form-column">
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="3 Months Bank Statement">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Drivers Licence Front">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                     <div class="col-8 name business-location px-0 row new-icon">
                         <input type="text" class="form-control col-11" placeholder="Drivers Licence Front">
-                        <img src="/public/icons/info-icon.svg" alt="" class="icon-info">
+                        <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
-                <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
+                </button> -->
+                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                      href="#">Next</a>
                 </button>
             </div>
 
@@ -448,10 +507,17 @@
                     </div>
     
                 </div>
-                <button class="nav-next forward-nav"><a
-                    class="nav-link" href="submit.html">Next</a>
-            </button>
+
+                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                    href="#">Back</a>
+                </button>
+
+                <button class="nav-next forward-nav setting"><a
+                    class="nav-link" href="./submit.html">Next</a>
+                </button>
+
             </div>
-        </div>
+      </div>
     </div>
+  </div>
 </body>

@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/forms_style.css">
+
+    <link rel="stylesheet" href="../style/form_progress_bar.css">
+    <link rel="stylesheet" href="../style/m_section.css">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <!-- -->
     <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
     <script src="../js/forms.js"></script>
     <title>MoneyBee</title>
+
+    <style>
+        .progress{
+            width: 32%; background: var(--primary-color); height: 4px !important;
+        }
+    </style>
 </head>
 
 <body>
     <div class="content">
         <div class="sidebar-section">
             <div class="sidebar-logo">
-                <img src="../public/images/sidebar_logo.png" alt="logo">
+                <img src="../public/images/logo-design-transparent.png" alt="logo" style=" margin-top: -26px; width: 100%;">
             </div>
             <div class="sidebar_menu">
                 <ul class="nav flex-column">
@@ -47,12 +58,22 @@
                     <a class="nav-link" href="#">Back</a>
                 </div>
                 <div class="nav-button">
-                    <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
-                    <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+                    <button class="callus-nav"><a class="nav-link" href="#">Sign up</a></button>
+                    <button class="login-nav"><a class="nav-link" href="#">Sign in</a></button>
                 </div>
             </div>
+            <!-- progress bar -->
+            <div class="progressbar">
+                <div class="progress" id="progress"></div> 
+                <div class="progress-step progress-step-active" data-title="Basic info"></div>
+                <div class=" progress-step  progress-step-active" data-title="Owner info"></div>
+                <div class="progress-step" data-title="Business info"></div>
+                <div class="progress-step" data-title="Submit"></div>
+            </div>
+            <!-- progress bar -->
+
             <div class="basic-info col-8">
-                <div class="question" id="question1">
+                <div class="question form-step-active" id="question1">
                     <div class="header sub-header">
                         <h1>Create an account</h1>
                         <p>Let’s create an account, so you can return any time and see your loan options. Get a decision
@@ -98,7 +119,8 @@
                             <p>Accept messages, calls, emails</p>
                         </div>
                     </div>
-                    <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
+                    <a class="nav-link" href="./basic-info.html" style="color: #B5A300;"><div class="backward-nav setting">Back</div></a>
+                    <button class="nav-next forward-nav"style="margin-top:23px;"  onclick="showNextQuestion(this.parentElement)"><a
                             class="nav-link" href="#">Next</a>
                     </button>
                 </div>
@@ -115,8 +137,14 @@
                     <div class="vef-code px-2 mt-1">
                         <p class="pl-2">Didn't receive a code?</p><span class="pr-2 highlight"> Send another code</span>
                     </div>
-                    <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
+                    <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
                             class="nav-link" href="#">Next</a>
+                    </button> -->
+                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                        href="#">Back</a>
+                    </button>
+                    <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                          href="#">Next</a>
                     </button>
                 </div>
 
@@ -134,7 +162,7 @@
                             <input type="text" class="form-control" placeholder="Owner's city">
                         </div>
                         <div class="row state-container">
-                            <select class="form-control col-6 px-1" name="month" style="width: 200px; height: 49px;">
+                            <select class="form-control col-6 px-1" name="month" style="width: 200px; height: 40px;">
                                 <option value="" disabled selected>Owner's state</option>
                             </select>
                             <div class="name col-6">
@@ -143,32 +171,38 @@
                         </div>
                     </form>
 
-                    <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
+                    <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
                             class="nav-link" href="#">Next</a>
+                    </button> -->
+                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                        href="#">Back</a>
+                    </button>
+                    <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
+                          href="#">Next</a>
                     </button>
                 </div>
 
-        <div class="question" id="question4">
-            <div class="header sub-header">
-                <h1>Owner credit check</h1>
-                <p>A credit check is required to receive offers. Don’t worry, this is a soft credit pull and won’t impact your credit.</p>
-                <h6 class="mt-3">POWERED BY EXPLORIA</h6>
-            </div>
-            <div class="subtitle">
-                <h4>Owner date of birth</h4>
-            </div>
-            <form class="form">
-                <div class="row option-container">
-                    <select class="form-control col-3 px-1" name="month" style="height: 49px;">
-                        <option value="" disabled selected>Month</option>
-                      </select>
-                      <select class="form-control col-3 px-1" name="day" style="height: 49px;">
-                        <option value="" disabled selected>Day</option>
-                      </select>
-                      <select class="form-control col-3 px-1" name="year" style="height: 49px;">
-                        <option value="" disabled selected>Year</option>
-                      </select>
-                </div>
+                <div class="question" id="question4">
+                    <div class="header sub-header">
+                        <h1>Owner credit check</h1>
+                        <p>A credit check is required to receive offers. Don’t worry, this is a soft credit pull and won’t impact your credit.</p>
+                        <h6 class="mt-3">POWERED BY EXPLORIA</h6>
+                    </div>
+                    <div class="subtitle">
+                        <h4>Owner date of birth</h4>
+                    </div>
+                    <form class="form">
+                        <div class="row option-container">
+                            <select class="form-control col-3 px-1" name="month" style="height: 49px;">
+                                <option value="" disabled selected>Month</option>
+                            </select>
+                            <select class="form-control col-3 px-1" name="day" style="height: 49px;">
+                                <option value="" disabled selected>Day</option>
+                            </select>
+                            <select class="form-control col-3 px-1" name="year" style="height: 49px;">
+                                <option value="" disabled selected>Year</option>
+                            </select>
+                        </div>
 
                         <div class="name mt-4 mb-4 col-10 px-0 mx-0">
                             <input type="text" class="form-control" placeholder="Social Security Number">
@@ -178,9 +212,16 @@
                             Conditions</span></p>
                     <p class="cred-chek">This will not hurt your credit</p>
 
-                    <button class="nav-next forward-nav"><a
-                            class="nav-link" href="business-info.html">Next</a>
+
+                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
+                        href="#">Back</a>
+                    </button>
+
+                    <button class="nav-next forward-nav" style="margin-top: 43;"><a
+                        class="nav-link" href="./business-info.html">Next</a>
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
