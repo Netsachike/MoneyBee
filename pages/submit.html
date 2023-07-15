@@ -5,19 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/forms_style.css">
+
+  <link rel="stylesheet" href="../style/form_progress_bar.css">
+  <link rel="stylesheet" href="../style/m_section.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
   <!-- -->
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
+  <style>
+    .progress{
+        width: 80%; background: var(--primary-color); height: 4px !important;
+    }
+ </style>
 </head>
 
 <body>
   <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
-        <img src="../public/images/sidebar_logo.png" alt="logo">
+        <img src="../public/images/logo-design-transparent.png" alt="logo" style=" margin-top: -26px; width: 100%;">
       </div>
       <div class="sidebar_menu">
         <ul class="nav flex-column">
@@ -47,12 +56,21 @@
           <a class="nav-link" href="#">Back</a>
         </div>
         <div class="nav-button">
-          <button class="callus-nav"><a class="nav-link" href="#">Call us</a></button>
-          <button class="login-nav"><a class="nav-link" href="#">Log in</a></button>
+          <button class="callus-nav"><a class="nav-link" href="#">Sign up</a></button>
+          <button class="login-nav"><a class="nav-link" href="#">Sign in</a></button>
         </div>
       </div>
+          <!-- progress bar -->
+          <div class="progressbar">
+            <div class="progress" id="progress"></div> 
+            <div class="progress-step progress-step-active" data-title="Basic info"></div>
+            <div class=" progress-step progress-step-active" data-title="Owner info"></div>
+            <div class="progress-step progress-step-active" data-title="Business info"></div>
+            <div class="progress-step" data-title="Submit"></div>
+        </div>
+        <!-- progress bar -->
       <div class="basic-info col-10">
-        <div class="question" id="question6">
+        <div class="question form-step-active" id="question6">
           <div class="header">
               <h1>Submitting your application</h1>
           </div>
@@ -66,19 +84,21 @@
             <div class="submit2-line col-6">
                 <div class="submit2-row">
                   <div class="line"></div>
-                  <img src="/public/icons/task-success.svg" alt="">
+                  <img src="../public/icons/task-success.svg" alt="">
                 </div>
                 <div class="submit2-row">
                   <div class="line-two"></div>
-                  <img src="/public/icons/task-unsuccess.svg" alt="">
+                  <img src="../public/icons/task-unsuccess.svg" alt="">
                 </div>
                 <div class="submit2-row">
                   <div class="line line-three"></div>
-                  <img src="/public/icons/task-unsuccess.svg" alt="">
+                  <img src="../public/icons/task-unsuccess.svg" alt="">
                 </div>
             </div>
           </div>
-          <button class="nav-next forward-nav"><a class="nav-link"
+          <a class="nav-link" href="./business-info.html" style="color: #B5A300;"><div class="backward-nav setting">Back</div></a>
+
+          <button class="nav-next forward-nav" style="margin-top:22px;"><a class="nav-link"
               href="#">Next</a>
           </button>
       </div>

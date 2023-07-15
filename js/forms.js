@@ -1,21 +1,36 @@
-function showNextQuestion(currentQuestion) {
-    currentQuestion.style.display = 'none'; // Hide the current question
 
+
+
+function showNextQuestion(currentQuestion) {
+     // Hide the curre question
+     currentQuestion.style.display = 'none';
     var nextQuestion = currentQuestion.nextElementSibling;
     if (nextQuestion) {
-      nextQuestion.style.display = 'block'; // Show the next question
+      // Show the next question
+      nextQuestion.style.display = 'block'; 
     }
   }
+
+
+  function showPrevious(currentQuestion) {
+    // Hide the current question
+    currentQuestion.style.display = 'none'; 
+    var prevQuestion = currentQuestion.previousElementSibling;
+    if (prevQuestion) {
+      // Show the previous question
+      prevQuestion.style.display = 'block'; 
+    }
+  }
+
 
   document.addEventListener('DOMContentLoaded', function() {
     var questions = document.getElementsByClassName('question');
     var firstQuestion = questions[0];
-    firstQuestion.style.display = 'block'; // Show the first question
-
-    var buttons = document.getElementsByClassName('next-button');
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function() {
-        showNextQuestion(this.parentElement);
-      });
-    }
+    // Show the first question
+    firstQuestion.style.display = 'block'; 
+    showNextQuestion(this.parentElement)
+    showPrevious(this.parentElement)
   });
+ 
+
+
