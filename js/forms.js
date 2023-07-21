@@ -23,14 +23,23 @@ function showNextQuestion(currentQuestion) {
   }
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var questions = document.getElementsByClassName('question');
-    var firstQuestion = questions[0];
-    // Show the first question
-    firstQuestion.style.display = 'block'; 
-    showNextQuestion(this.parentElement)
-    showPrevious(this.parentElement)
-  });
- 
+  const ownerInformation = document.querySelector(`[value="issueA"]`)
+  const businessInformation = document.querySelector(`[value="issueB"]`)
+  const ownerInformationProprerty =  document.querySelector('.issueA')
+  const businessInformationProprerty =    document.querySelector('.issueB')
+
+  ownerInformation.addEventListener('click',() =>{
+      ownerInformationProprerty.style.display='block';
+      businessInformationProprerty.style.display='none';
+      console.log('ownerInformation') 
+  })
+
+  businessInformation.addEventListener('click',() =>{
+      businessInformationProprerty.style.display='block';
+      ownerInformationProprerty.style.display='none';
+      console.log('businessInformation')
+  }) 
+
+
 
 

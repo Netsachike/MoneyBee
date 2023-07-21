@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/forms_style.css">
 
-  <link rel="stylesheet" href="../style/form_progress_bar.css">
-  <link rel="stylesheet" href="../style/m_section.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+
+  <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="../style/form_progress_bar.css">
+  <link rel="stylesheet" href="../style/m_section.css">
   <!-- -->
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
@@ -19,6 +20,34 @@
     .progress{
         width: 80%; background: var(--primary-color); height: 4px !important;
     }
+
+    @media (max-width: 920px){
+    .col-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-right: 48px;
+    }
+
+  }
+
+  @media (max-width: 533px){
+    .col-6{
+      margin-right: 8px;
+    }
+
+  }
+  @media (max-width:485px){
+    .col-6{
+      margin-right:  40px;
+    }
+  }
+
+  @media (max-width:450px){
+    .col-6{
+      margin-right: 40px;
+    }
+  }
  </style>
 </head>
 
@@ -69,7 +98,7 @@
             <div class="progress-step" data-title="Submit"></div>
         </div>
         <!-- progress bar -->
-      <div class="basic-info col-10">
+      <div class="basic-info col-10 submit-1">
         <div class="question form-step-active" id="question6">
           <div class="header">
               <h1>Submitting your application</h1>
@@ -98,7 +127,7 @@
           </div>
           <a class="nav-link" href="./business-info.html" style="color: #B5A300;"><div class="backward-nav setting">Back</div></a>
 
-          <button class="nav-next forward-nav" style="margin-top:22px;"><a class="nav-link"
+          <button class="nav-next forward-nav submit-12" style="margin-top:22px;"><a class="nav-link"
               href="#">Next</a>
           </button>
       </div>

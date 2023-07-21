@@ -262,11 +262,14 @@ body {
 .setting {
   margin-top: 30px!important;
 }
+.owner1{margin-top: 55px;}
+
 /* Global ------------------------------------------end */
 
 /* Basic info section ---------------------------------*/
 .basic-info{
   padding-bottom: 10px;
+  
 }
 
 .header {
@@ -280,9 +283,9 @@ body {
 .header h1 {
   color: var(--typography-primary, #0b1323);
   margin-bottom: 16px;
-  /* H1 */
+  
   font-size: 32px;
-  font-family: Arial, sans-serif; /*Montserrat*/;
+  font-family: Arial, sans-serif;;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -291,23 +294,11 @@ body {
 .header p {
   color: var(--typography-secondary, #525d73);
   font-size: 16px;
-  font-family: Arial, sans-serif; /*Montserrat*/;
+  font-family: Arial, sans-serif; ;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-/* .subtitle {
-  color: var(--typography-primary, #0b1323);
-  font-size: 20px;
-  font-family: Arial, sans-serif; 
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 72px;
-  margin-bottom: 43px;
-} */
-
+} 
 
 .subtitle {
   color: var(--typography-primary, #0b1323);
@@ -317,8 +308,15 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-top: 0px;
+  margin-bottom: 43px;
   margin-bottom: 27px;
 }
+.subtitle h4 {
+  font-size: 16px;
+  margin-top: 31px;
+  margin-bottom: -14px;
+}
+
 
 .form-inline .form-group {
   margin-right: 10px;
@@ -341,7 +339,8 @@ body {
   height: 56px;
   border-radius: 10px;
   border: 2px solid var(--outline, #C5CCD8) !important;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  margin: 0 10px 10px;
   color: var(--typography-primary, #0b1323) !important;
   text-align: center;
 
@@ -360,10 +359,11 @@ body {
 .apply-btn {
   width: 160px;
   height: 110px;
-  margin-right: 10px;
+  margin-right: 10px; 
   text-align: center;
   background: #fff;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+
 
   /* TItle 5 */
   font-size: 16px;
@@ -400,7 +400,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 700px;
+  width: 130%;
+  /* width: 700px; */
 }
 
 input{
@@ -529,16 +530,20 @@ span{
 }
 .owner{
   display: grid;
-  grid-template-columns:  repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns:  repeat(auto-fit, minmax(350px, auto));
   gap: 13px;
 
   border-radius: 16px;
   background: #FFF;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
   height: 50vh;
+  
   overflow-y: auto;
 
-  margin: 0 25px 0 -25px;
+  height: 68vh;
+  padding:20px;
+  margin: 0 25px 0 -25px; 
+  
 } 
 
 .owner::-webkit-scrollbar{
@@ -546,7 +551,7 @@ span{
 }
 
 .owner::-webkit-scrollbar-track{
-  background-color: #F4F7FA
+  background-color: #F4F7FA;
 }
 
 .owner::-webkit-scrollbar-thumb{
@@ -733,6 +738,16 @@ align-items: flex-start;
   background-color: #007bff;
   color: #ffffff;
   font-weight: bold;
+  height: 56px;
+  width: 320px;
+}
+.form-group select {
+  height: 56px;
+  width: 320px;
+  padding: 10px;
+  border-radius: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--outline, #c5ccd8);
 }
 
 .submit {

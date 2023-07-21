@@ -4,16 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/forms_style.css">
-
-  <link rel="stylesheet" href="../style/form_progress_bar.css">
-  <link rel="stylesheet" href="../style/m_section.css">
-  <link rel="stylesheet" href="../style/business_info.css">
-  
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-  <!-- -->
+
+  <link rel="stylesheet" href="../style/forms_style.css">
+  <link rel="stylesheet" href="../style/form_progress_bar.css">
+  <link rel="stylesheet" href="../style/m_section.css">
+
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
@@ -24,9 +22,9 @@
     @media (max-width: 785px){
         .progress{
         width: 65%; background: var(--primary-color); height: 4px !important;
+        }
     }
 
-}
  </style>
 </head>
 
@@ -77,13 +75,14 @@
             <div class="progress-step" data-title="Submit"></div>
         </div>
         <!-- progress bar -->
-      <div class="basic-info col-10">
-            <div class="question form-step-active" id="question1">
+        <!--col-10-->
+      <div class="basic-info col-8">
+            <div class="question form-step-active business" id="question1">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
                 </div>
-                <form class="g-5 mt-5 form-column">
+                <form class="g-5 mt-5 form-column"> 
                     <div class="name">
                         <input type="text" class="form-control" placeholder="Business Street Address">
                     </div>
@@ -112,13 +111,13 @@
                     </div>
                 </form>
 
-                <a class="nav-link  five-alive" href="./owner-info.html" style="color: #B5A300; margin-left: -13px;"><div class="backward-nav setting">Back</div></a> 
+                <a class="nav-link" href="./owner-info.html" style="color: #B5A300; margin-left: -13px;"><div class="backward-nav setting">Back</div></a> 
             
                 <button class="nav-next forward-nav" style="margin-top: 21px;" onclick="showNextQuestion(this.parentElement)"><a
                         class="nav-link" href="#">Next</a>
                 </button>
             </div>
-            <div class="question" id="question2">
+            <div class="question business" id="question2">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
@@ -145,7 +144,7 @@
                       href="#">Next</a>
                 </button>
             </div>
-            <div class="question" id="question3">
+            <div class="question business" id="question3">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
@@ -171,7 +170,7 @@
                       href="#">Next</a>
                 </button>
             </div>
-            <div class="question" id="question4">
+            <div class="question business" id="question4">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
@@ -217,7 +216,7 @@
                       href="#">Next</a>
                 </button>
             </div>
-            <div class="question" id="question5">
+            <div class="question business" id="question5">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
@@ -246,7 +245,7 @@
                       href="#">Next</a>
                 </button>
             </div>
-            <div class="question" id="question6">
+            <div class="question business" id="question6">
                 <div class="header">
                     <h1>Tell us aGet ahead! To close your loanbout your business</h1>
                     <p>We will eventually need these documents so upload them as when you have time.</p>
@@ -282,8 +281,16 @@
                     <p>Take your time to review any information before submitting. This is the last step of the application.</p>
                 </div>
     
+                <div class="main-issue">
+                    <h2 style="margin-top: 10px;"> Owner information <span style="margin-left: 37px;">
+                        <input type="radio" name="category" value="issueA" id="fissueA"></span></h2>
+
+                    <h2 style="margin-top: 10px;">Business information <span style="margin-left: 20px;">
+                        <input type="radio" name="category" value="issueB" id="fissueB"></span></h2>
+                </div>
                 <div class="information">
-                    <div class="owner">
+
+                    <div class="owner issueA">
                         <h3 class="px-3 mt-2">Owner information</h3>
                         <div class="label-input">
                             <div class="input-content">
@@ -394,7 +401,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owner">
+                    <div class="owner issueB">
                         <h3 class="px-3 mt-2">Business information</h3>
                         <div class="label-input">
                             <div class="input-content">
@@ -505,8 +512,231 @@
                             </div>
                         </div>
                     </div>
-    
+                    <div class="owner issueC">
+                        <h3 class="px-3 mt-2">Owner information</h3>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owner issueD">
+                        <h3 class="px-3 mt-2">Business information</h3>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                        <div class="label-input">
+                            <div class="input-content">
+                                <p>Label</p>
+                                <p>Input</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
 
                 <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
                     href="#">Back</a>
