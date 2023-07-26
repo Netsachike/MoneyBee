@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="../style/retro.css">
     <!-- -->
     <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
     <script src="../js/forms.js"></script>
@@ -24,7 +25,7 @@
     </style>
 </head>
 
-<body>
+<body mypage="owner-info">
     <div class="content">
         <div class="sidebar-section">
             <div class="sidebar-logo">
@@ -72,7 +73,7 @@
             </div>
             <!-- progress bar -->
 
-            <div class="basic-info col-8">
+            <div class="basic-info col-lg-10 col-md-12">
                 <div class="question form-step-active" id="question1">
                     <div class="header sub-header">
                         <h1>Create an account</h1>
@@ -82,33 +83,35 @@
                     <div class="subtitle">
                         <h2>How much money do you need?</h2>
                     </div>
-                    <form class="g-5 mt-5 form-column">
-                        <div class="row g-3">
-                            <div class="col-6 name">
-                                <input type="text" class="form-control" placeholder="First name">
+                    <form class="g-5 mt-5 form-column col-md-12">
+                        <div class="row g-3 mb-2">
+                            <div class="col-sm-6 name mb-1">
+                                <input type="text" class="form-control  solid-height" placeholder="First name">
                             </div>
-                            <div class="col-6 name">
-                                <input type="text" class="form-control" placeholder="Last name">
+                            <div class="col-sm-6 name mb-1">
+                                <input type="text" class="form-control  solid-height" placeholder="Last name">
                             </div>
                         </div>
-                        <div class="row g-3">
-                            <div class="col-6 name">
-                                <input type="email" class="form-control" placeholder="Email">
+                        <div class="row g-3 mb-2">
+                            <div class="col-sm-6 name mb-1">
+                                <input type="email" class="form-control solid-height" placeholder="Email">
                             </div>
-                            <div class="col-6 name">
-                                <input type="text" class="form-control" placeholder="Mobile phone">
+                            <div class="col-sm-6 name mb-1">
+                                <input type="text" class="form-control solid-height" placeholder="Mobile phone">
                             </div>
+                        </div>
+
+                        <div class="name">
+                            <input type="text" class="form-control solid-height" placeholder="Business name">
                         </div>
                         <div class="name">
-                            <input type="text" class="form-control" placeholder="Business name">
+                            <input type="password" class="form-control solid-height" placeholder="Password">
                         </div>
                         <div class="name">
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="name">
-                            <input type="password" class="form-control" placeholder="Confirm password">
+                            <input type="password" class="form-control solid-height" placeholder="Confirm password">
                         </div>
                     </form>
+
                     <div class="terms">
                         <div class="tc mt-3">
                             <input type="checkbox">
@@ -119,10 +122,16 @@
                             <p>Accept messages, calls, emails</p>
                         </div>
                     </div>
-                    <a class="nav-link" href="./basic-info.html" style="color: #B5A300;"><div class="backward-nav setting">Back</div></a>
-                    <button class="nav-next forward-nav"style="margin-top:23px;"  onclick="showNextQuestion(this.parentElement)"><a
-                            class="nav-link" href="#">Next</a>
-                    </button>
+                    
+
+                    <div class="retro-end-box pt-3">
+                        <button class="backward-nav">
+                          <a class="nav-link" href="./basic-info.html">Back</a>
+                        </button>
+                        <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                            <a class="nav-link" href="#">Next</a>
+                        </button>
+                      </div>
                 </div>
 
                 <div class="question" id="question2">
@@ -130,22 +139,23 @@
                         <h1>Email Verification</h1>
                         <p>We have emailed a verification code to loremipsum@gmail.com. Please enter the code below.</p>
                     </div>
-                    <div class="input_button col-6 mt-5 px-0 name">
-                        <input class="form-control form-control-lg" type="text" placeholder="Verification code"
-                            aria-label=".form-control-lg example">
-                    </div>
+                    
+                    <input class="form-control form-control-lg" type="text" placeholder="Verification code">
+
                     <div class="vef-code px-2 mt-1">
                         <p class="pl-2">Didn't receive a code?</p><span class="pr-2 highlight"> Send another code</span>
                     </div>
                     <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
                             class="nav-link" href="#">Next</a>
                     </button> -->
-                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                        href="#">Back</a>
-                    </button>
-                    <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                          href="#">Next</a>
-                    </button>
+                    <div class="retro-end-box pt-3">
+                        <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                            <a class="nav-link" href="#">Back</a>
+                        </button>
+                        <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                            <a class="nav-link" href="#">Next</a>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="question" id="question3">
@@ -154,32 +164,38 @@
                         <p>We’re gathering this information beacuse lenders do background checks on owners as part of
                             the loan underwriting process.</p>
                     </div>
-                    <form class="form">
-                        <div class="name mt-5 mb-4">
-                            <input type="text" class="form-control" placeholder="Owner's street address">
+                    <form class="form-column col-md-12 mt-4">
+                        <div class="name mb-2">
+                            <input type="text" class="form-control solid-height" placeholder="Owner's street address">
                         </div>
-                        <div class="name mt-2 mb-4">
-                            <input type="text" class="form-control" placeholder="Owner's city">
+                        <div class="name mb-2">
+                            <input type="text" class="form-control solid-height" placeholder="Owner's city">
                         </div>
-                        <div class="row state-container">
-                            <select class="form-control col-6 px-1" name="month" style="width: 200px; height: 40px;">
-                                <option value="" disabled selected>Owner's state</option>
-                            </select>
-                            <div class="name col-6">
-                                <input type="text" class="form-control" placeholder="Owner's city">
+                        <div class="row mx-0">
+                            <div class="col-sm-6 px-0 mb-1">
+                                <select class="form-control solid-height" name="month" >
+                                    <option value="" disabled selected>Owner's state</option>
+                                </select>
                             </div>
+                            
+                            <div class="name col-sm-6 mb-1 px-0 mb-1">
+                                <input type="text" class="form-control solid-height" placeholder="Owner's city">
+                            </div>
+                        </div>
+
+                        <div class="retro-end-box mt-3">
+                            <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                                <a class="nav-link" href="#">Back</a>
+                            </button>
+                            <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                                <a class="nav-link" href="#">Next</a>
+                            </button>
                         </div>
                     </form>
 
                     <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a
                             class="nav-link" href="#">Next</a>
                     </button> -->
-                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                        href="#">Back</a>
-                    </button>
-                    <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                          href="#">Next</a>
-                    </button>
                 </div>
 
                 <div class="question" id="question4">
@@ -191,21 +207,21 @@
                     <div class="subtitle">
                         <h4>Owner date of birth</h4>
                     </div>
-                    <form class="form">
+                    <form class="form-column col-md-12">
                         <div class="row option-container">
-                            <select class="form-control col-3 px-1" name="month" style="height: 49px;">
+                            <select class="form-control col-3 px-1 solid-height mb-1" name="month">
                                 <option value="" disabled selected>Month</option>
                             </select>
-                            <select class="form-control col-3 px-1" name="day" style="height: 49px;">
+                            <select class="form-control col-3 px-1 solid-height mb-1" name="day">
                                 <option value="" disabled selected>Day</option>
                             </select>
-                            <select class="form-control col-3 px-1" name="year" style="height: 49px;">
+                            <select class="form-control col-3 px-1 solid-height mb-0" name="year">
                                 <option value="" disabled selected>Year</option>
                             </select>
                         </div>
 
-                        <div class="name mt-4 mb-4 col-10 px-0 mx-0">
-                            <input type="text" class="form-control" placeholder="Social Security Number">
+                        <div class="name mt-3 mb-3 col-10 px-0 mx-0">
+                            <input type="text" class="form-control solid-height" placeholder="Social Security Number">
                         </div>
                     </form>
                     <p class="cred-chek">By clicking the button below lorem ipsum <span class="highlight">Terms and
@@ -213,13 +229,15 @@
                     <p class="cred-chek">This will not hurt your credit</p>
 
 
-                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                        href="#">Back</a>
-                    </button>
+                    <div class="retro-end-box mt-3">
+                        <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                            <a class="nav-link" href="#">Back</a>
+                        </button>
+                        <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                            <a class="nav-link" href="./business-info.html">Next</a>
+                        </button>
+                    </div>
 
-                    <button class="nav-next forward-nav" style="margin-top: 43;"><a
-                        class="nav-link" href="./business-info.html">Next</a>
-                    </button>
                 </div>
             </div>
         </div>

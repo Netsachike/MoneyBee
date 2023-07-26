@@ -94,6 +94,7 @@
   [custom-xn]:hover{
     border: 2px solid #007bff !important;
   }
+
   h1 {
     color: var(--typography-primary, #0b1323);
     margin-bottom: 16px;
@@ -150,4 +151,159 @@
     float: right;
   }
 
+}
+
+/*submit*/
+@media (max-width: 1080px){
+  .col-10{
+    max-width: 100% !important;
+  }
+  .line, .line-two {
+    height: 4px;
+    width: 150px;
+  }
+} 
+@media (max-width: 920px){
+   .submit-1 {
+    margin-left: -49px; 
+  } 
+  .col-10{
+    max-width: 100% !important;
+  }
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 48px;
+    margin-right: -1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+ 
+  }
+}
+
+@media (max-width:860px){
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .submit2-row {
+    padding-top: 15px;
+  }
+
+}
+
+@media (max-width:799px) {
+      .submit2-row {
+        padding-top: 15px;
+        margin-top: 5px;
+      }
+}  
+ 
+@media (max-width: 786px){
+  .col-10{
+    max-width: 100% !important;
+    margin-left: 5px;
+  }
+  .submit2-row {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .line, .line-two {
+    height: 4px;
+    width: 150px;
+  }
+
+} 
+
+@media (max-width: 660px){
+  .submit2{
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 578px){
+  .submit2-col p{
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 533px){
+  .submit2-col p{
+    font-size: 16px !important;
+  }
+  .submit2-row {
+    padding-top: 5px;
+    margin-top: -5px;
+  }
+  .col-6{
+    margin-right: 8px;
+    margin-right: -1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .line, .line-two {
+    height: 4px;
+    width: 120px;
+  }
+}
+@media (max-width:485px){
+  .col-6{
+    margin-right:  40px;
+    margin-right: -1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .submit2-line {
+    padding-top: 9px;
+    margin-top: 6px;
+  }
+}
+
+ @media (max-width:450px){
+  .submit2-row {
+    padding-top: 5px;
+    margin-top: -13px;
+    margin-right: -74px;
+  }
+  .col-6{
+    margin-right: 40px;
+    margin-right: -1px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .submit2-line {
+    display: flex;
+    flex-direction: column;
+    gap: 55px !important;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@media (max-width:379px){
+  .submit2 {
+    margin-right: 63px;
+    margin-left: -29px;
+  }
+  .submit-12 {
+    width: 90px;
+    float: right;
+    margin-right: 33px;
+  }
+  .col-6{
+    max-width: 89%;
+  }
 }
