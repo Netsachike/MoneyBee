@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="../style/retro.css">
+  <link rel="stylesheet" href="../style/font/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
+  <script src="../js/forms.js"></script>
+  <title>MoneyBee</title>
+</head>
+
+<body mypage="basic-info">
+  <div class="retro-content">
+    <div class="main-section mx-auto">
+      <div class="nav-wrapper-cover mb-5">
+        <!-- <div class="back">
+          <i class="fa fa-angle-left"></i>
+          <a class="nav-link" href="#">Back</a>
+        </div> -->
+        <div class="nav-button-wrapper">
+          <button class="nav-login-button-off mr-2"><a class="nav-link" href="#">Sign up</a></button>
+          <button class="nav-login-button"><a class="nav-link" href="#">Sign in</a></button>
+        </div>
+      </div>
+
+      <!--Mobile Nav-->
+      <div class="mobile-progress-nav"> 
+        <div class="progress-bar"></div>
+        <div class="mobile-retro-nav-item">
+          <div class="mobile-retro-nav-icon">1</div>
+          <div class="mobile-retro-nav-item-text">Basic Info</div>
+        </div>
+        <div class="mobile-retro-nav-item">
+          <div class="mobile-retro-nav-icon">2</div>
+          <div class="mobile-retro-nav-item-text">Owner Info</div>
+        </div>
+        <div class="mobile-retro-nav-item">
+          <div class="mobile-retro-nav-icon">3</div>
+          <div class="mobile-retro-nav-item-text">Business Info</div>
+        </div>
+        <div class="mobile-retro-nav-item">
+          <div class="mobile-retro-nav-icon">4</div>
+          <div class="mobile-retro-nav-item-text">Submit</div>
+        </div>
+      </div>
+
+      <!--Desktop Nav-->
+      <div class="retro-nav px-0 mb-4">
+        <div class="retro-nav-item">1. Basic info</div>
+        <div class="retro-nav-item">2. Owner info</div>
+        <div class="retro-nav-item">3. Business info</div>
+        <div class="retro-nav-item">4. Submit</div>
+      </div>
+
+      <div class="basic-info">
+        <div class="main-info-content">
+
+          <div class="retro-section">
+            <div class="mb-5">
+              <h2 class="text-center ">Tell us about yourself</h2>
+              <p class="text-center mid-opacity">Let’s start with some basic questions so we can find you the best loan options.</p>  
+            </div>
+            
+            <div class="question">
+              <div class="main-input-container">
+                <h6>Business start date 
+                  <span class="col-1 m-0 p-0 pr-1 mid-opacity">
+                    <i class="fa fa-info-circle"></i>
+                  </span>
+                </h6>
+                <div class="col-sm-12 space-between-wapper px-0">
+                  <div class="col-at-half px-0">
+                    <label class="mid-opacity">Month</label>
+                    <div class="form-input-box solid-height">
+                      <span class="col-1 m-0 p-0 pr-1">
+                        <i class="fa fa-calendar fa-lg"></i>
+                      </span>
+                      <div class="demacator"></div>
+                      <select class="col-10 borderless height-45 m-0 p-0" name="describe" >
+                        <option value="" disabled selected>12.10.2023</option>
+                        <!-- Add the Options here -->
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-at-half px-0">
+                    <label class="mid-opacity">Year</label>
+                    <div class="form-input-box solid-height">
+                      <span class="col-1 m-0 p-0 pr-1">
+                        <i class="fa fa-calendar fa-lg"></i>
+                      </span>
+                      <div class="demacator"></div>
+                      <select class="col-10 borderless height-45 m-0 p-0" name="describe" >
+                        <option value="" disabled selected>12.10.2023</option>
+                        <!-- Add the Options here -->
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="retro-end-box bottom-button-wrapper">
+                <button class="next-button-off at-mobile-width46 mr-3">
+                  <span class="next-button-text">Back</span>
+                </button>
+                <button class="next-button-on at-mobile-width46" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <span class="next-button-text">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="main-input-container mb-4">
+                <h6>Average month sales</h6>
+
+                <div class="plain-row">
+                  <button type="button" class="btn btn-outline-primary">$0k</button>
+                  <button type="button" class="btn btn-outline-primary">$1k-4k</button>
+                  <button type="button" class="btn btn-outline-primary">$5k-7k</button>
+                  <button type="button" class="btn btn-outline-primary">$8k-14k</button>
+                  <button type="button" class="btn btn-outline-primary">$15k-19k</button>
+                  <button type="button" class="btn btn-outline-primary">$20k-45k</button>
+                  <button type="button" class="btn btn-outline-primary">$50k-79k</button>
+                  <button type="button" class="btn btn-outline-primary">$80k-199k</button>
+                  <button type="button" class="btn btn-outline-primary">$200k+</button>
+                </div>
+              </div>
+              
+              <div class="retro-end-box bottom-button-wrapper">
+                <button class="next-button-off at-mobile-width46 mr-3" onclick="showPrevious(this.parentElement.parentElement)">
+                  <span class="next-button-text">Back</span>
+                </button>
+                <button class="next-button-on at-mobile-width46" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <span class="next-button-text">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="main-input-container">
+                <div>
+                  <label class="mid-opacity">How much money do you need?</label>
+                  <input class="form-control form-control-lg" type="text" placeholder="Enter a valid dollar amount">
+                </div>
+              </div>
+
+              <div class="retro-end-box">
+                <button class="next-button-off at-mobile-width46 mr-3" onclick="showPrevious(this.parentElement.parentElement)">
+                  <span class="next-button-text">Back</span>
+                </button>
+                <button class="next-button-on at-mobile-width46" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <span class="next-button-text">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="main-input-container">
+                <div>
+                  <label class="mid-opacity">How much money do you need?</label>
+                  <div class="form-input-box solid-height dropdown">
+                    <div class="col-11 dropdown-button-text borderless">What best describes your business?</div>
+                    <div class="dropdown-content">
+                      <label class="dropdown-button-text pb-2">What best describes your business?</label>
+                      <label class="dropdown-button-text pb-2">Gambling</label>
+                      <label class="dropdown-button-text pb-2">Agriculture, Forestry, Fishing and Hunting</label>
+                    </div>
+                    <span class="m-0 p-0 pl-1">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="retro-end-box">
+                <button class="next-button-off at-mobile-width46 mr-3" onclick="showPrevious(this.parentElement.parentElement)">
+                  <span class="next-button-text">Back</span>
+                </button>
+                <button class="next-button-on at-mobile-width46" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <span class="next-button-text">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="question">
+              <h6>Average month sales</h6>
+              <div class="main-input-container">
+                <div class="plain-row" style="gap: 10px;">
+
+                  <div class="form-input-box col-by-3">
+                    <div class="col-sm-12 select-button-text borderless">
+                      <span class="m-0 p-0 pr-1">
+                        <i class="fa fa-credit-card fa-2x"></i>
+                      </span>
+                      <div class="demacator"></div>
+                      <span>Accept Credit Card</span>
+                    </div>
+                  </div>
+
+                  <div class="form-input-box col-by-3">
+                    <div class="col-sm-12 select-button-text borderless">
+                      <span class="m-0 p-0 pr-1">
+                        <i class="fa fa-bookmark fa-2x"></i>
+                      </span>
+                      <div class="demacator"></div>
+                      <span>Invoice Customers</span>
+                    </div>
+                  </div>
+
+                  <div class="form-input-box col-by-3">
+                    <div class="col-sm-12 select-button-text borderless">
+                      <span class="m-0 p-0 pr-1">
+                        <i class="fa fa-balance-scale fa-2x"></i>
+                      </span>
+                      <div class="demacator"></div>
+                      <span>Operate As None Profit</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="retro-end-box">
+                <button class="next-button-off at-mobile-width46 mr-3" onclick="showPrevious(this.parentElement.parentElement)">
+                  <span class="next-button-text">Back</span>
+                </button>
+                <button class="next-button-on at-mobile-width46" xonclick="showNextQuestion(this.parentElement.parentElement)">
+                    <span class="next-button-text">Next</span>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
