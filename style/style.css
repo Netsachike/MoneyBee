@@ -332,10 +332,19 @@ h3 {
 
 /* how moneybee works start */
 
+.info-container { margin: 40px auto; max-width: 1200px; padding: 20px;}
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.info h3 {
+  margin: 20px 0;
+  font-weight: var(--font-medium);
+  font-family: var(--font-family);
+  font-size: var(--font-fouty);
+  line-height: 49px;
 }
 
 .steps {
@@ -729,9 +738,278 @@ input {
 /* Add Font Awesome CSS link to your HTML file */
 /* footer */
 
+/*-----------------------------------------------*//*-----------------------------------------------*/
+/*----------------------Nav dropdown---------------------*/
+:root {
+  /* Colors */
+  --primary-color: #FFC61E;
+  --secondary-color: #1635C3;
+  --typography-primary: #0B1323;
+  --typography-secondary: #525D73;
+  --typography-disabled: #939DAE;
+
+  --text-color: #fff;
+
+  --icon-active: #0B1323;
+  --icon-inactive: #525D73;
+  --icon-disabled: #939DAE;
+  --bg-primary-color: #F4F7FA;
+  --surface: #F4F7FA;
+  --outline: #C5CCD8;
+  --on-surface: #0B1323;
+  --success: #188F1E;
+  --error: #B3261E;
+  --black: #000000;
+  --black-two: #333333;
+  --black-three: #555555;
+  --black-four: #757575;
+  --black-five: #999999;
+  --black-six: #aaaaaa;
+  --black-seven: #cccccc;
+  --black-eight: #eeeeee;
+  --white: #ffffff;
+  --shadow: 0px 12px 30px 0px #080A0A18;
+  --text-area-bg: #ecf2fc;
+
+
+  /* Font and Typography */
+  --font-family: 'Montserrat', sans-serif;
+
+  --font-fouty: 40px;
+  --font-thirty-two: 32px;
+  --font-twenty-four: 24px;
+  --font-twenty: 20px;
+  --font-sixteen: 16px;
+  --font-fourteen: 14px;
+  --font-twelve: 12px;
+
+  /* font weight */
+  --font-thic: 900;
+  --font-extrabold: 800;
+  --font-bold: 700;
+  --font-semibold: 600;
+  --font-medium: 500;
+  --font-normal: 400;
+  --font-light: 300;
+  --font-thin: 200;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  }
+  
+  .row > * {
+      flex-shrink: 0;
+      width: 0%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * 0.05) !important;
+      padding-left: calc(var(--bs-gutter-x) * .005) !important;
+      margin-top: var(--bs-gutter-y);   
+    }
+
+  .titleFour{
+    font-size: var(--font-sixteen);
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    line-height: 20px;
+  }
+  .more{
+    position: absolute;
+    display: none;
+    left: 20vw;
+  }
+  .moreLinks:hover  .more{
+    display: flex;
+  }
+  .btnFour{
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    font-size: var(--font-fourteen);
+    background: var(--white);
+    font-family: var(--font-family);
+    font-weight: var(--font-medium);
+    height: 36px;
+    width: 120px;
+    border: 1px solid var(--outline);
+    color: var(--secondary-color);
+  }
+  .dropDown {
+    max-width: 1150px;
+    margin: 0%;
+    padding: 40px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 16px;
+  }
+  .dropDown .row {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropDown .row .col {
+    width: 30%;
+  }
+  .dropDown .row .col .bodyOne {
+    margin-bottom: 20px;
+  }
+  .dropDown .row .col ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    display: block;
+  }
+  .dropDown .row .col ul a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+  }
+  .dropDown .row .col ul li {
+    margin: 8px 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .dropDown .row .col ul li:hover{
+    color: var(--black-six);
+  }
+  .dropDown .row .line{
+    width: 0.5px;
+    min-height: 300px;
+    background: var(--white);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .dropDown .row .video{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 8px;
+    color: var(--black-three);
+  }
+  .dropDown .row .titleFive{
+    margin: 15px 0px;
+  }
+/*----------------------What Our Happy Clients Say---------------------*/
+  .displayTwo {
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .displayTwo {
+    font-size: var(--font-fouty);
+    font-family: var(--font-family);
+    font-weight: var(--font-medium);
+    line-height: 49px;
+    font-weight: 700;
+  }
+
+  .clientSays{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+  }
+  .clientSays .container{
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px; 
+  
+  }
+  .clientSays .container .displayTwo{
+      text-align: center;
+      max-width: 450px;
+      margin: auto;
+      margin-bottom: 40px;
+  }
+  .clientSays .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+  }
+  .clientSays .row .col{
+      margin: 2%;
+      padding: 20px;
+      width: 360px;
+      margin-left: 34px;
+  }
+  .clientSays .review{
+      box-shadow: var(--shadow);
+      border-radius: 16px;
+  }
+  .clientSays .review .icon{
+      width: 56px;
+      height: 56px;
+      margin: 24px;
+      background: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: -28px;
+  }
+  .clientSays .review .rating{
+      padding-top: 50px;
+      margin: 20px;
+  }
+  .clientSays .review .rating img{
+      margin-right: 8px;
+  }
+  .clientSays .review  .bodyOne{
+      margin: 20px;
+      margin-top: 0;
+  }
+  .clientSays .review hr{
+      border: 1px solid var(--outline);
+  }
+  .clientSays .review .client{
+      display: flex;
+      margin: 20px;
+      padding-bottom: 20px;
+      align-items: center;
+  }
+  .clientSays .review .client img{
+      margin-right: 10px;
+  }
+/*-----------------------------------------------*/
+.input select {
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  height: 44px;
+  margin-left: -10px;
+  outline: none;
+  padding: 10px;
+}
+/* Styles for the menu when it's hidden */
+.menu {
+  display: none;
+}
+
+/* Styles for the menu when it's visible */
+.menu.open {
+  display: block;
+}
+/*-----------------------------------------------*//*-----------------------------------------------*/
+
 
 /*Media Query*/
 /* Mobile devices */
+
+@media (max-width :768px){
+  .info-image{
+    display: none !important;
+  }
+}
 @media (max-width: 767px) {
 
   html, body{
