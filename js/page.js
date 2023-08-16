@@ -1,15 +1,10 @@
-const ham = document.querySelector(".hidden");
-const burger = document.querySelector(".button-menu");
-const closeIcon = document.querySelector(".close");
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+}
 
-burger.addEventListener('click', () => {
-  if (ham.classList.contains('hidden')) {
-    ham.classList.remove('hidden');
-  }
-});
-
-closeIcon.addEventListener('click', () => {
-  ham.classList.add('hidden');
-});
-
+function closeMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.remove("open");
+}
     

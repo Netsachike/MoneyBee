@@ -295,7 +295,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 2px;
+  padding: 0 !important;
+ 
 }
+.header h2 {
+  margin-top: 19px;
+}
+
 
 /* .subtitle {
   color: var(--typography-primary, #0b1323);
@@ -595,10 +602,7 @@ align-items: flex-start;
 .px-1 {
   padding-left: 0.5rem !important;
 }
-.header p {
-  margin-top: 0;
-  text-align: center;
-} 
+
 
 /*business-info section---------------------------end*/
 

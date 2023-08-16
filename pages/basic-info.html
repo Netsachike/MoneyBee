@@ -8,15 +8,19 @@
 
   <link rel="stylesheet" href="../style/form_progress_bar.css">
   <link rel="stylesheet" href="../style/m_section.css">
+  <link rel="stylesheet" href="../style/retro.css">
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="../style/retro.css">
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
+
+
 </head>
 
-<body>
+<body mypage="basic-info">
   <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
@@ -82,47 +86,133 @@
                   aria-label=".form-control-lg example">
               </div>
             </div>
-              <button class="nav-next forward-nav " onclick="showNextQuestion(this.parentElement)" ><a class="nav-link"
-                  href="#">Next</a></button>
+
+            <div class="retro-end-box pt-4 nor1a">
+              <button class="backward-nav nor1b">
+                <a class="nav-link" href="#">I Haven't Started Yet</a>
+              </button>
+              <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Next</a>
+              </button>
+            </div>
           <!-- <div custom-xn= "section"> -->
           </div>
           
           
-          <div class="question" id="question2">
+            <div class="question" id="question2" custom-xn="mobile-section">
+              <h1>Tell us about yourself</h1>
+              <p>Let’s start with some basic questions so we can find you the best loan options.</p>
+              <div class="subtitle">
+                <h2>Business Start Date?</h2>
+              </div>
+
+              <div class="row normal-2a">
+                <form class="form-column">
+                  <div  class = "form_new">
+                    
+                    <div class="form-group">
+                      <select class="form-control solid-height" name="month">
+                        <option value="" disabled selected>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                    </div>
+                    <!-- <div class="form-group">
+                      <select class="form-control solid-height" name="day">
+                        <option value="" disabled selected>Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                       
+                      </select>
+                    </div> -->
+                 
+
+                   <div class="form-group">
+                    <select class="form-control solid-height" name="year">
+                      <option value="" disabled selected>Year</option>
+                    
+                    </select>
+                  </div> 
+                </div>
+                </form>
+              </div>
+            <!-- <div class="normal_2r"> 
+                  <div class="input_button" style="margin-bottom: 10px;">
+                    <input class="form-control form-control-lg" type="date" placeholder="Month"
+                      aria-label=".form-control-lg example">
+                  </div> 
+                  <div class="input_button">
+                    <input class="form-control form-control-lg" type="date"   placeholder="Year"
+                      aria-label=".form-control-lg example">
+                  </div>
+              </div> -->
+
+              <div class="retro-end-box pt-4 nor2a">
+                <button class="backward-nav">
+                  <a class="nav-link" href="#">I Haven't Started Yet</a>
+                </button>
+                <button class="forward-nav normal_2s" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
+            </div>
+
+          <div class="question" id="question2" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h2>Personal Credit Score</h2>
             </div>
             <div class="container text-center ">
-              <div class="col">
-                <div class="row" style="margin-bottom: 38px;">
+              <div class="col px-0">
+                <div class="row mb-3" >
                   <button type="button" class="btn btn-outline-primary">499 or below</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
-                </div>
-                <div class="row">
+                
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                 </div>
               </div>
+
+              <div class="retro-end-box pt-2 nor2b" >
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav normal_2b" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
+              
             </div>
-
-            
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                  href="#">Back</a></button>
-                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                    href="#">Next</a></button>
-
           </div>
 
-          <div class="question" id="question3">
+          
+          <div class="question" id="question3" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p> 
             <div class="subtitle">
               <h2>What type of loan are you looking for?</h2>
             </div>
-            <div class="row">
-              <form class="form">
-                <div class="form-group">
-                  <select class="form-control" name="month" style="width: 232px; height: 56px;">
+            <div class="row roll3">
+              <form class="form-column col-md-12">
+                <div class="form-group mb-2">
+                  <label for="">Month</label>
+                  <select class="form-control solid-height" name="month" >
                     <option value="" disabled selected>Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -138,202 +228,196 @@
                     <option value="12">December</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <input type="date" style="width: 232px; height: 56px;">
-                  <select class="form-control" name="year" style="width: 232px; height: 56px;">
+
+                <div class="form-group mb-3">
+                  <label for="">Day</label>
+                  <select class="form-control solid-height" name="year">
+                    <option>22</option>
+                    <!-- Add the years here -->
+                  </select>
+                </div>
+                
+                <div class="form-group mb-3">
+                  <label for="">Year</label>
+                  <select class="form-control solid-height" name="year">
                     <option value="" disabled selected>Year</option>
                     <!-- Add the years here -->
                   </select>
                 </div>
-                <div class="form-group">
-                  <button class="btn btn-outline-primary">I haven’t started business yet</button>
-                </div>
+
 
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+            <div class="retro-end-box nor3a">
+              <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                <a class="nav-link" href="#">Back</a>
+              </button>
+              <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Next</a>
+              </button>
+            </div>
                 
           </div>
-          <div class="question" id="question4">
+
+          <div class="question" id="question4" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p> 
             <div class="subtitle">
               <h5>Average monthly sales</h5>
             </div>
             <div class="container text-center ">
-              <div class="col" style="display: grid;">
-                <div class="row button-group">
-                  <button type="button" class="btn btn-outline-primary">$0k</button>
-                  <button type="button" class="btn btn-outline-primary">$1k-4k</button>
-                  <button type="button" class="btn btn-outline-primary" style="margin-top: 10px;">$5k-7k</button>
-                </div>
-                <div class="row button-group">
-                  <button type="button" class="btn btn-outline-primary">$8k-14k</button>
-                  <button type="button" class="btn btn-outline-primary">$15k-19k</button>
-                  <button type="button" class="btn btn-outline-primary">$20k-49k</button>
-                </div>
-                <div class="row">
-                  <button type="button" class="btn btn-outline-primary">$50k-79k</button>
-                  <button type="button" class="btn btn-outline-primary">$80k-199k</button>
-                  <button type="button" class="btn btn-outline-primary">$200k+</button>
+              <div class="col px-0">
+                <div class="row mb-3">
+                  <button type="button" class="btn btn-outline-primary mb-1">$0k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$1k-4k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$5k-7k</button>
+                
+                  <button type="button" class="btn btn-outline-primary mb-1">$8k-14k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$15k-19k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$20k-49k</button>
+                
+                  <button type="button" class="btn btn-outline-primary mb-1">$50k-79k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$80k-199k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$200k+</button>
                 </div>
               </div>
+
+              <div class="retro-end-box pt-2 nor4a">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
 
-          <div class="question" id="question5">
+          <div class="question" id="question5" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p> 
             <div class="subtitle">
               <h2>Which best describes your business?</h2>
             </div>
-            <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <select class="form-control" name="describe" style="    width: 407px;
-                  height: 56px;">
+            <div class="row normal-2ax">
+              <form class="form-column">
+                <div class="form-group mr-0">
+                  <select class="form-control solid-height" name="describe">
                     <option value="" disabled selected>Which best describes your business?</option>
                     <option value="1">Agriculture, Forestry, Fishing and Hunting Arts</option>
                     <option value="2">Gambling</option>
                     <option value="3">Arts, Entertainment, and Recreation</option>
                     <option value="4">Adult Entertainment</option>
-
-                    <!-- Add the days here -->
                   </select>
+                </div>
+                <div class="retro-end-box nor5a">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
                 </div>
               </form>
             </div>
-            <button class=" backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+            
           </div>
-          <div class="question" id="question6">
+
+          <div class="question" id="question6" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h5>Let’s learn a little bit about your business. Select all that apply.
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
+              <div class="col px-0">
                 <div class="row button-group">
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  >
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                >
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                 >
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
-                </div>
-                <div class="row button-group">
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
+              <button type="button" class="btn btn-outline-primary apply-btn" >
+                <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
+              <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
 
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                    style="display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;">
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
-                </div>
-                <div class="row button-group">
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                      <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                    style="display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;">
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
-                      <button type="button" class="btn btn-outline-primary apply-btn" 
-                      style="display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          flex-direction: column;">
-                          <i class="fas fa-tag fa-lg"></i>Accept credit
-                        cards</button>
-                </div> 
-                
-              
-                <div class="row">
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-                    
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                      <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
                 </div>
               </div>
-            </div>
-            <!-- <button class="forward-nav setting" style="margin-top: 0px; margin-left: 100%; margin-bottom: 20px;" onclick="showNextQuestion(this.parentElement)"><a
-                class="nav-link" href="#">Next</a></button> -->
-                <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                  href="#">Back</a></button>
-                <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                    href="#">Next</a></button>
+
+              <div class="retro-end-box nor6a">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
+            </div>                
           </div>
-          <div class="question" id="question7">
+
+          <div class="question" id="question7" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h5>What purpose would your loan serve? Select all that apply.</h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
+              <div class="col px-0">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Purchase a business</button>
                   <button type="button" class="btn btn-outline-primary">Purchase a franchise</button>
                   <button type="button" class="btn btn-outline-primary">Equipment</button>
-                </div>
-                <div class="row button-group">
+                
                   <button type="button" class="btn btn-outline-primary">Purchase a business</button>
                   <button type="button" class="btn btn-outline-primary">Purchase a franchise</button>
                   <button type="button" class="btn btn-outline-primary">Equipment</button>
-                </div>
-                <div class="row">
+                
                   <button type="button" class="btn btn-outline-primary">Finance account receivable</button>
                   <button type="button" class="btn btn-outline-primary">Other</button>
                 </div>
               </div>
+
+              <div class="retro-end-box nor7a">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav normal_7b" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
-          <div class="question" id="question8">
+
+          <div class="question" id="question8" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h5>Have you ever filed for bankruptcy?</h5>
             </div>
@@ -350,40 +434,53 @@
                 </label>
               </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+
+              <div class="retro-end-box nor8a">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
           </div>
 
-          <div class="question" id="question9">
+          <div class="question" id="question9" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h4>Which state is your business in?</h4>
             </div>
-            <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <select class="form-control" name="describe" style="    width: 500px;
-                height: 56px;">
+            <div class="row normal-2ax">
+              <form class="form-column">
+                <div class="form-group">
+                  <select class="form-control solid-height" name="describe" >
                     <option value="" disabled selected>Select</option>
                     <!-- Add the Options here -->
                   </select>
                 </div>
+                <div class="retro-end-box nor9a">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
-          <div class="question" id="question10">
+
+          <div class="question" id="question10" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h2>What is the bankruptcy discharge date?</h2>
             </div>
-            <div class="row">
-              <form class="form-inline">
+            <div class="row normal-2ax">
+              <form class="form-column">
                 <div class="form-group">
-                  <select class="form-control" name="month">
+                  <select class="form-control solid-height" name="month">
                     <option value="" disabled selected>Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -400,7 +497,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="day">
+                  <select class="form-control solid-height" name="day">
                     <option value="" disabled selected>Day</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -411,82 +508,102 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="year">
+                  <select class="form-control solid-height" name="year">
                     <option value="" disabled selected>Year</option>
                     <!-- Add the years here -->
                   </select>
                 </div>
-              </form>
-            </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
-          </div>
 
-          <div class="question" id="question11">
-            <div class="subtitle">
-              <h4>Business ownership percentage</h4>
-            </div>
-            <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <input class="form-control" type="text" name="percentage" id="percentage" placeholder="0%" style="    width: 280px;
-                  height: 56px;">
+                <div class="retro-end-box mt-4 nor10a">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
                 </div>
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
-          <div class="question" id="question12">
+
+          <div class="question" id="question11" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
+            <div class="subtitle">
+              <h4>Business ownership percentage</h4>
+            </div>
+            <div class="row roll_11">
+              <form class="form-column">
+                <input class="form-control solid-height" type="text" name="percentage" id="percentage" placeholder="0%">
+
+                <div class="retro-end-box mt-4 normal-11b">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="question" id="question12" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
             <div class="subtitle">
               <h5>Annual Personal Income
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Below $30k</button>
                   <button type="button" class="btn btn-outline-primary">$30k-$50k</button>
                   <button type="button" class="btn btn-outline-primary">$50k-$75k</button>
-                </div>
-                <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">$75k-$100k</button>
                   <button type="button" class="btn btn-outline-primary">$100k-$150k</button>
                   <button type="button" class="btn btn-outline-primary">$100k-$150k</button>
                 </div>
-              </div>
+
+                <div class="retro-end-box mt-4  nor12a">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav  normal_12b" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
             </div>
-            <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
-          <div class="question" id="question13">
+
+          <div class="question" id="question13" custom-xn="mobile-section">
+            <h1>Tell us about yourself</h1>
+            <p>Let’s start with some basic questions so we can find you the best loan options.</p>
+            
             <div class="subtitle">
               <h5>Which is most important to you?
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Amount of funds</button>
                   <button type="button" class="btn btn-outline-primary">Speed of funds</button>
                   <button type="button" class="btn btn-outline-primary">Cost of funds</button>
-                </div>
+              </div>
+
+              <div class="retro-end-box mt-4 nor13a">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
               </div>
             </div>
-            <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
           
           <div id="loan-success">
-            <div class="header">
+            <div class="header" custom-xn="mobile-section">
               <h1>Great News!
               </h1>
               <p>Based on your answers so far you've matched to 2 loan options.
@@ -504,8 +621,7 @@
           </div>
         </div>
     </div>
-    </div>
-
+  </div>
 
 </body>
 

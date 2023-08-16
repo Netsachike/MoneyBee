@@ -23,14 +23,6 @@ function showNextQuestion(currentQuestion) {
   }
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var questions = document.getElementsByClassName('question');
-    var firstQuestion = questions[0];
-    // Show the first question
-    firstQuestion.style.display = 'block'; 
-    showNextQuestion(this.parentElement)
-    showPrevious(this.parentElement)
-  });
- 
+
 
 
