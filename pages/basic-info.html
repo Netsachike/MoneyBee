@@ -8,15 +8,17 @@
 
   <link rel="stylesheet" href="../style/form_progress_bar.css">
   <link rel="stylesheet" href="../style/m_section.css">
+  <link rel="stylesheet" href="../style/retro.css">
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="../style/retro.css">
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
   <title>MoneyBee</title>
 </head>
 
-<body>
+<body mypage="basic-info">
   <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
@@ -82,8 +84,15 @@
                   aria-label=".form-control-lg example">
               </div>
             </div>
-              <button class="nav-next forward-nav " onclick="showNextQuestion(this.parentElement)" ><a class="nav-link"
-                  href="#">Next</a></button>
+
+            <div class="retro-end-box pt-4">
+              <button class="backward-nav">
+                <a class="nav-link" href="#">I Haven't Started Yet</a>
+              </button>
+              <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Next</a>
+              </button>
+            </div>
           <!-- <div custom-xn= "section"> -->
           </div>
           
@@ -93,26 +102,28 @@
               <h2>Personal Credit Score</h2>
             </div>
             <div class="container text-center ">
-              <div class="col">
-                <div class="row" style="margin-bottom: 38px;">
+              <div class="col px-0">
+                <div class="row mb-3" >
                   <button type="button" class="btn btn-outline-primary">499 or below</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
-                </div>
-                <div class="row">
+                
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                   <button type="button" class="btn btn-outline-primary">500-599</button>
                 </div>
               </div>
+
+              <div class="retro-end-box pt-2">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
+              
             </div>
-
-            
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                  href="#">Back</a></button>
-                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                    href="#">Next</a></button>
-
           </div>
 
           <div class="question" id="question3">
@@ -120,9 +131,10 @@
               <h2>What type of loan are you looking for?</h2>
             </div>
             <div class="row">
-              <form class="form">
-                <div class="form-group">
-                  <select class="form-control" name="month" style="width: 232px; height: 56px;">
+              <form class="form-column col-md-12">
+                <div class="form-group mb-2">
+                  <label for="">Month</label>
+                  <select class="form-control solid-height" name="month" >
                     <option value="" disabled selected>Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -138,52 +150,67 @@
                     <option value="12">December</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <input type="date" style="width: 232px; height: 56px;">
-                  <select class="form-control" name="year" style="width: 232px; height: 56px;">
+
+                <div class="form-group mb-3">
+                  <label for="">Day</label>
+                  <select class="form-control solid-height" name="year">
+                    <option>22</option>
+                    <!-- Add the years here -->
+                  </select>
+                </div>
+                
+                <div class="form-group mb-3">
+                  <label for="">Year</label>
+                  <select class="form-control solid-height" name="year">
                     <option value="" disabled selected>Year</option>
                     <!-- Add the years here -->
                   </select>
                 </div>
-                <div class="form-group">
-                  <button class="btn btn-outline-primary">I haven’t started business yet</button>
-                </div>
+
 
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+            <div class="retro-end-box">
+              <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                <a class="nav-link" href="#">Back</a>
+              </button>
+              <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Next</a>
+              </button>
+            </div>
                 
           </div>
+
           <div class="question" id="question4">
             <div class="subtitle">
               <h5>Average monthly sales</h5>
             </div>
             <div class="container text-center ">
-              <div class="col" style="display: grid;">
-                <div class="row button-group">
-                  <button type="button" class="btn btn-outline-primary">$0k</button>
-                  <button type="button" class="btn btn-outline-primary">$1k-4k</button>
-                  <button type="button" class="btn btn-outline-primary" style="margin-top: 10px;">$5k-7k</button>
-                </div>
-                <div class="row button-group">
-                  <button type="button" class="btn btn-outline-primary">$8k-14k</button>
-                  <button type="button" class="btn btn-outline-primary">$15k-19k</button>
-                  <button type="button" class="btn btn-outline-primary">$20k-49k</button>
-                </div>
-                <div class="row">
-                  <button type="button" class="btn btn-outline-primary">$50k-79k</button>
-                  <button type="button" class="btn btn-outline-primary">$80k-199k</button>
-                  <button type="button" class="btn btn-outline-primary">$200k+</button>
+              <div class="col px-0">
+                <div class="row mb-3">
+                  <button type="button" class="btn btn-outline-primary mb-1">$0k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$1k-4k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$5k-7k</button>
+                
+                  <button type="button" class="btn btn-outline-primary mb-1">$8k-14k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$15k-19k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$20k-49k</button>
+                
+                  <button type="button" class="btn btn-outline-primary mb-1">$50k-79k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$80k-199k</button>
+                  <button type="button" class="btn btn-outline-primary mb-1">$200k+</button>
                 </div>
               </div>
+
+              <div class="retro-end-box pt-2">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
 
           <div class="question" id="question5">
@@ -191,10 +218,9 @@
               <h2>Which best describes your business?</h2>
             </div>
             <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <select class="form-control" name="describe" style="    width: 407px;
-                  height: 56px;">
+              <form class="form-column">
+                <div class="form-group mr-0">
+                  <select class="form-control solid-height" name="describe">
                     <option value="" disabled selected>Which best describes your business?</option>
                     <option value="1">Agriculture, Forestry, Fishing and Hunting Arts</option>
                     <option value="2">Gambling</option>
@@ -204,135 +230,110 @@
                     <!-- Add the days here -->
                   </select>
                 </div>
+                <div class="retro-end-box">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
               </form>
             </div>
-            <button class=" backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+            
           </div>
+
           <div class="question" id="question6">
             <div class="subtitle">
               <h5>Let’s learn a little bit about your business. Select all that apply.
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
+              <div class="col px-0">
                 <div class="row button-group">
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  >
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                >
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                </button>
 
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                 >
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
+                <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
+
+              <button type="button" class="btn btn-outline-primary apply-btn" >
+                <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
+
+              <button type="button" class="btn btn-outline-primary apply-btn" >
+                  <i class="fas fa-tag fa-lg"></i>Accept credit cards
+              </button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                      <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                    <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
+
+                  <button type="button" class="btn btn-outline-primary apply-btn" >
+                      <i class="fas fa-tag fa-lg"></i>Accept credit cards
+                  </button>
                 </div>
-                <div class="row button-group">
+              </div>
 
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                    style="display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;">
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
-                </div>
-                <div class="row button-group">
-
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-                    <button type="button" class="btn btn-outline-primary apply-btn" 
-                    style="display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;">
-                        <i class="fas fa-tag fa-lg"></i>Accept credit
-                      cards</button>
-                      <button type="button" class="btn btn-outline-primary apply-btn" 
-                      style="display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          flex-direction: column;">
-                          <i class="fas fa-tag fa-lg"></i>Accept credit
-                        cards</button>
-                </div> 
-                
-              
-                <div class="row">
-                  <button type="button" class="btn btn-outline-primary apply-btn" 
-                  style="display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;">
-                      <i class="fas fa-tag fa-lg"></i>Accept credit
-                    cards</button>
-                    
-                </div>
+              <div class="retro-end-box">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
               </div>
             </div>
             <!-- <button class="forward-nav setting" style="margin-top: 0px; margin-left: 100%; margin-bottom: 20px;" onclick="showNextQuestion(this.parentElement)"><a
                 class="nav-link" href="#">Next</a></button> -->
-                <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                  href="#">Back</a></button>
-                <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                    href="#">Next</a></button>
+                
           </div>
+
           <div class="question" id="question7">
             <div class="subtitle">
               <h5>What purpose would your loan serve? Select all that apply.</h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
+              <div class="col px-0">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Purchase a business</button>
                   <button type="button" class="btn btn-outline-primary">Purchase a franchise</button>
                   <button type="button" class="btn btn-outline-primary">Equipment</button>
-                </div>
-                <div class="row button-group">
+                
                   <button type="button" class="btn btn-outline-primary">Purchase a business</button>
                   <button type="button" class="btn btn-outline-primary">Purchase a franchise</button>
                   <button type="button" class="btn btn-outline-primary">Equipment</button>
-                </div>
-                <div class="row">
+                
                   <button type="button" class="btn btn-outline-primary">Finance account receivable</button>
                   <button type="button" class="btn btn-outline-primary">Other</button>
                 </div>
               </div>
+
+              <div class="retro-end-box">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
+
           <div class="question" id="question8">
             <div class="subtitle">
               <h5>Have you ever filed for bankruptcy?</h5>
@@ -350,10 +351,15 @@
                 </label>
               </div>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
+
+              <div class="retro-end-box">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
+              </div>
           </div>
 
           <div class="question" id="question9">
@@ -361,29 +367,33 @@
               <h4>Which state is your business in?</h4>
             </div>
             <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <select class="form-control" name="describe" style="    width: 500px;
-                height: 56px;">
+              <form class="form-column">
+                <div class="form-group">
+                  <select class="form-control solid-height" name="describe" >
                     <option value="" disabled selected>Select</option>
                     <!-- Add the Options here -->
                   </select>
                 </div>
+                <div class="retro-end-box">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
+
           <div class="question" id="question10">
             <div class="subtitle">
               <h2>What is the bankruptcy discharge date?</h2>
             </div>
             <div class="row">
-              <form class="form-inline">
+              <form class="form-column">
                 <div class="form-group">
-                  <select class="form-control" name="month">
+                  <select class="form-control solid-height" name="month">
                     <option value="" disabled selected>Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -400,7 +410,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="day">
+                  <select class="form-control solid-height" name="day">
                     <option value="" disabled selected>Day</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -411,17 +421,22 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="year">
+                  <select class="form-control solid-height" name="year">
                     <option value="" disabled selected>Year</option>
                     <!-- Add the years here -->
                   </select>
                 </div>
+
+                <div class="retro-end-box mt-4">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
 
           <div class="question" id="question11">
@@ -429,60 +444,68 @@
               <h4>Business ownership percentage</h4>
             </div>
             <div class="row">
-              <form class="form-inline" style="margin-right: 0px;">
-                <div class="form-group" style="margin-right: 0px;">
-                  <input class="form-control" type="text" name="percentage" id="percentage" placeholder="0%" style="    width: 280px;
-                  height: 56px;">
+              <form class="form-column">
+                <input class="form-control solid-height" type="text" name="percentage" id="percentage" placeholder="0%">
+
+                <div class="retro-end-box mt-4">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
                 </div>
               </form>
             </div>
-            <button class="backward-nav setting " onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav setting " onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
+
           <div class="question" id="question12">
             <div class="subtitle">
               <h5>Annual Personal Income
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Below $30k</button>
                   <button type="button" class="btn btn-outline-primary">$30k-$50k</button>
                   <button type="button" class="btn btn-outline-primary">$50k-$75k</button>
-                </div>
-                <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">$75k-$100k</button>
                   <button type="button" class="btn btn-outline-primary">$100k-$150k</button>
                   <button type="button" class="btn btn-outline-primary">$100k-$150k</button>
                 </div>
-              </div>
+
+                <div class="retro-end-box mt-4 ">
+                  <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Back</a>
+                  </button>
+                  <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                      <a class="nav-link" href="#">Next</a>
+                  </button>
+                </div>
             </div>
-            <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
+
           <div class="question" id="question13">
             <div class="subtitle">
               <h5>Which is most important to you?
               </h5>
             </div>
             <div class="container text-center ">
-              <div class="col">
                 <div class="row button-group">
                   <button type="button" class="btn btn-outline-primary">Amount of funds</button>
                   <button type="button" class="btn btn-outline-primary">Speed of funds</button>
                   <button type="button" class="btn btn-outline-primary">Cost of funds</button>
-                </div>
+              </div>
+
+              <div class="retro-end-box mt-4 ">
+                <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement.parentElement)">
+                  <a class="nav-link" href="#">Back</a>
+                </button>
+                <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement.parentElement)">
+                    <a class="nav-link" href="#">Next</a>
+                </button>
               </div>
             </div>
-            <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-              href="#">Back</a></button>
-            <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                href="#">Next</a></button>
           </div>
           
           <div id="loan-success">
@@ -504,8 +527,7 @@
           </div>
         </div>
     </div>
-    </div>
-
+  </div>
 
 </body>
 

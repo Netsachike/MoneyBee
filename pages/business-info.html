@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="../style/retro.css">
   <!-- -->
   <script src="https://kit.fontawesome.com/b68d968969.js" crossorigin="anonymous"></script>
   <script src="../js/forms.js"></script>
@@ -30,7 +31,7 @@
  </style>
 </head>
 
-<body>
+<body mypage="business-info">
   <div class="content">
     <div class="sidebar-section">
       <div class="sidebar-logo">
@@ -77,47 +78,58 @@
             <div class="progress-step" data-title="Submit"></div>
         </div>
         <!-- progress bar -->
-      <div class="basic-info col-10">
+      <div class="basic-info col-lg-10 col-md-12">
             <div class="question form-step-active" id="question1">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
                 </div>
-                <form class="g-5 mt-5 form-column">
+                <form class="g-5 mt-5 form-column col-md-12">
                     <div class="name">
-                        <input type="text" class="form-control" placeholder="Business Street Address">
+                        <input type="text" class="form-control solid-height" placeholder="Business Street Address">
                     </div>
                     <div class="name">
-                        <input type="text" class="form-control" placeholder="Business City">
+                        <input type="text" class="form-control solid-height" placeholder="Business City">
                     </div>
-                    <div class="row business-location">
-                        <select class="form-control col-5 px-1" name="month" style="height: 49px;">
-                            <option value="" disabled selected>Business State</option>
-                        </select>
-                        <div class="col-7 name">
-                            <input type="text" class="form-control" placeholder="Business Zip Code">
+                    <div class="plain-row business-location">
+                        <div class="col-sm-5 mb-1 p-0">
+                            <select class="form-control px-1 solid-height" name="month" >
+                                <option value="" disabled selected>Business State</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-7 width-100-md name mb-1 p-0">
+                            <input type="text" class="form-control solid-height" placeholder="Business Zip Code">
                         </div>
                     </div>
-                    <div class="col-8 name business-location px-0 mt-5 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Federal/state tax ID">
+                    <div class="col-sm-8 name business-location px-0 mt-5 row new-icon">
+                        <input type="text" class="form-control solid-height col-10" placeholder="Federal/state tax ID">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Number Of Employees">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control solid-height col-10" placeholder="Number Of Employees">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="DBA Name Optional">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control solid-height col-10" placeholder="DBA Name Optional">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
 
-                <a class="nav-link  five-alive" href="./owner-info.html" style="color: #B5A300; margin-left: -13px;"><div class="backward-nav setting">Back</div></a> 
+                <div class="retro-space-box px-3">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Next</a>
+                    </button>
+                </div>
+
+                <!-- <a class="nav-link  five-alive" href="./owner-info.html" style="color: #B5A300; margin-left: -13px;">
+                    <div class="backward-nav setting">Back</div>
+                </a>  -->
             
-                <button class="nav-next forward-nav" style="margin-top: 21px;" onclick="showNextQuestion(this.parentElement)"><a
-                        class="nav-link" href="#">Next</a>
-                </button>
             </div>
+
             <div class="question" id="question2">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
@@ -126,10 +138,10 @@
                 <div class="subtitle">
                     <h2>Annual Profits</h2>
                 </div>
-                <form class="g-5 mt-5 form-column">
-                    <div class="col-4 name business-location px-0 row new-icon-small p-0">
-                        <input type="text" class="form-control col-7 focus" placeholder="0">
-                        <div class="new-icon-small-content col-5">
+                <form class="g-5 mt-5 form-column col-md-12 px-0">
+                    <div class="col-sm-8 name business-location px-0 row new-icon-small p-0">
+                        <input type="text" class="form-control col-8 focus height-auto" placeholder="0">
+                        <div class="new-icon-small-content col-4">
                             <p>USD</p>
                             <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                         </div>
@@ -138,59 +150,64 @@
                 <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
                 </button> -->
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                      href="#">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Next</a>
+                    </button>
+                </div>
             </div>
+
             <div class="question" id="question3">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
                 </div>
-                <form class="g-5 mt-5 form-column">
-                    <div class="col-8 mx-0 px-0">
-                        <select class="form-control " name="month" style="height: 49px;">
+                <form class="g-5 mt-5 form-column col-md-12 px-0">
+                    <div class="col-sm-8 mx-0 px-0">
+                        <select class="form-control solid-height" name="month">
                             <option value="" disabled selected class="py-1">Business State</option>
                         </select>
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Federal/state tax ID">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-11 solid-height" placeholder="Federal/state tax ID">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
                 <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
                 </button> -->
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                      href="#">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Next</a>
+                    </button>
+                </div>
             </div>
+
             <div class="question" id="question4">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
                 </div>
-                <form class="g-5 mt-5 form-column mb-3">
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Number Of Additional Beneficiary Owners">
+                <form class="g-5 mt-5 form-column col-md-12 mb-3 px-0">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-10 solid-height" placeholder="Number Of Additional Beneficiary Owners">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Number Of Additional Mangaging Partners">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-10 solid-height" placeholder="Number Of Additional Mangaging Partners">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info" style="color: var(--secondary-color);">
                     </div>
 
                     <p style="font-size: 18px;">Do you have existing or current business loans?</p>
 
                     <div class="container text-center ">
-                        <div class="row" style="
-                        justify-content: start; gap: 20px;">
+                        <div class="row" style="justify-content: start; gap: 20px;">
                           <label class="container-checkbox">Yes
                             <input type="radio" checked="checked">
                             <span class="checkmark"></span>
@@ -202,27 +219,30 @@
                         </div>
                     </div>
 
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Existing Business Loan Amount">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-11 solid-height" placeholder="Existing Business Loan Amount">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
                 <!-- <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
                 </button> -->
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-                <button class="forward-nav" style="margin-top: 46px;" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                      href="#">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Next</a>
+                    </button>
+                </div>
             </div>
+
             <div class="question" id="question5">
                 <div class="header sub-header">
                     <h1>Tell us about your business</h1>
                     <p>We want to goin a better understand of your business to got you the best offer.</p>
                 </div>
-                <form class="g-5 mt-5 form-column mb-3">
+                <form class="g-5 mt-5 form-column col-md-12 mb-3">
                     <div class="container text-center ">
                         <div class="col">
                           <div class="row button-group">
@@ -239,41 +259,48 @@
                 <!-- <button class="nav-next forward-nav mt-5" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
                 </button> -->
-                <button class="backward-nav" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-                <button class="forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                      href="#">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav" onclick="showNextQuestion(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Next</a>
+                    </button>
+                </div>
             </div>
+
             <div class="question" id="question6">
                 <div class="header">
                     <h1>Tell us aGet ahead! To close your loanbout your business</h1>
                     <p>We will eventually need these documents so upload them as when you have time.</p>
                 </div>
-                <form class="g-5 mt-5 form-column">
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="3 Months Bank Statement">
+                <form class="g-5 mt-5 form-column col-md-12 px-0">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-11 solid-height" placeholder="3 Months Bank Statement">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Drivers Licence Front">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-11 solid-height" placeholder="Drivers Licence Front">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
-                    <div class="col-8 name business-location px-0 row new-icon">
-                        <input type="text" class="form-control col-11" placeholder="Drivers Licence Front">
+                    <div class="col-sm-8 name business-location px-0 row new-icon">
+                        <input type="text" class="form-control col-11 solid-height" placeholder="Drivers Licence Front">
                         <img src="../public/icons/info-icon.svg" alt="" class="icon-info">
                     </div>
                 </form>
                 <!-- <button class="nav-next forward-nav" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
                     href="#">Next</a>
                 </button> -->
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-                <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement)"><a class="nav-link"
-                      href="#">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav setting" onclick="showPrevious(this.parentElement.parentElement)"><a class="nav-link"
+                        href="#">Back</a>
+                    </button>
+
+                    <button class="forward-nav setting" onclick="showNextQuestion(this.parentElement.parentElement)"><a class="nav-link"
+                          href="#">Next</a>
+                    </button>
+                </div>
+                
             </div>
 
             <div class="question" id="review">
@@ -508,13 +535,14 @@
     
                 </div>
 
-                <button class="backward-nav setting" onclick="showPrevious(this.parentElement)"><a class="nav-link"
-                    href="#">Back</a>
-                </button>
-
-                <button class="nav-next forward-nav setting"><a
-                    class="nav-link" href="./submit.html">Next</a>
-                </button>
+                <div class="retro-space-box">
+                    <button class="backward-nav" onclick="showPrevious(this.parentElement.parentElement)">
+                        <a class="nav-link" href="#">Back</a>
+                    </button>
+                    <button class="forward-nav">
+                        <a class="nav-link" href="./submit.html">Next</a>
+                    </button>
+                </div>
 
             </div>
       </div>
